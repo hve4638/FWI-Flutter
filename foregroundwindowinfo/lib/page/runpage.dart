@@ -1,0 +1,119 @@
+import 'package:fluent_ui/fluent_ui.dart';
+import '/windowinfo/foregroundwindowinfo.dart';
+import '/timer/intervalevent.dart';
+import 'wintracerstate.dart';
+
+class RunPage extends WinTracerWidget {
+  const RunPage({
+    Key? key,
+    required onInitState,
+    required this.foregroundWindowInfo,
+    required this.onToggle
+  }) : super(key: key, onInitState : onInitState);
+  final ForegroundWindowInfo foregroundWindowInfo;
+  final Function onToggle;
+
+  @override
+  State<RunPage> createState() => RunPageState();
+}
+
+class RunPageState extends WinTracerState<RunPage> {
+  var info = ForegroundWindowInfo();
+  var event = IntervalEvent();
+  var buttonText = "Start";
+  var buttonColor = Colors.green;
+
+  @override
+  enableTrace() {
+    event.start(100, () {
+      setState(() {
+        info.copy(widget.foregroundWindowInfo);
+      });
+    });
+  }
+
+  @override
+  disableTrace() {
+    event.stop();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    info.copy(widget.foregroundWindowInfo);
+  }
+
+  toggle() {
+    var _enabled = widget.onToggle();
+    if (_enabled) {
+      setState(() {
+        buttonText = "Stop";
+        buttonColor = Colors.red;
+      });
+    }
+    else {
+      setState(() {
+        buttonText = "Start";
+        buttonColor = Colors.green;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color : Colors.white,
+      child : Column(
+        children : [
+          Expanded(
+            child: Center(
+              child: Text(
+                  info.time,
+                style : const TextStyle(
+                  fontSize : 32,
+                  fontWeight: FontWeight.bold,
+                )
+              ),
+            ),
+          ),
+          Expanded(
+            child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  //crossAxisAlignment: CrossAxisAlignment.center,
+                  children : [
+                    Text(info.name,
+                      style : const TextStyle(
+                        overflow: TextOverflow.ellipsis,
+                        color: Colors.black,
+                        fontSize : 64,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Flexible(
+                      child: Container(
+                        padding: const EdgeInsets.all(13.0),
+                        child: Text(info.title,
+                          style : const TextStyle(
+                            overflow: TextOverflow.ellipsis,
+                            color: Colors.black,
+                            fontSize : 18,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ]
+              ),
+          ),
+          Expanded(
+            child: Center(
+              child: Button(
+                onPressed: toggle,
+                child : Text(buttonText),
+              )
+            ),
+          ),
+        ]
+      )
+    );
+  }
+}
