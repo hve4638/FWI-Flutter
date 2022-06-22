@@ -1,4 +1,4 @@
-# wininfo
+# foregroundwindowinfo
 
 A new Flutter project.
 

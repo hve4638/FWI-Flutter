@@ -3,14 +3,14 @@
 #include <map>
 #include "winfomap.h"
 #include "resstr.h"
-#include "tcw.h"
+#include "fwi.h"
 
 using namespace std;
 
 InfoMap infomap;
 ResultString result;
 
-const wchar_t* winfo_info(int key) {
+const wchar_t* fwi_info(int key) {
 	switch (key) {
 	case 0:
 		return L"ABC";
@@ -21,15 +21,15 @@ const wchar_t* winfo_info(int key) {
 	}
 }
 
-int winfo_create() {
+int fwi_create() {
 	return infomap.Create();
 }
 
-int winfo_destroy(int key) {
+int fwi_destroy(int key) {
 	return infomap.Remove(key);
 }
 
-const wchar_t* winfo_title(int key) {
+const wchar_t* fwi_title(int key) {
 	WInfo *info = &infomap[key];
 	wstring wstr = (info->GetTitle());
 	result = wstr;
@@ -37,7 +37,7 @@ const wchar_t* winfo_title(int key) {
 	return result.utf16();
 }
 
-const wchar_t* winfo_name(int key) {
+const wchar_t* fwi_name(int key) {
 	WInfo* info = &infomap[key];
 	wstring wstr = info->GetName();
 	result = wstr;
@@ -45,7 +45,7 @@ const wchar_t* winfo_name(int key) {
 	return result.utf16();
 }
 
-const wchar_t* winfo_path(int key) {
+const wchar_t* fwi_path(int key) {
 	WInfo* info = &infomap[key];
 	wstring wstr = info->GetPath();
 	result = wstr;
@@ -53,7 +53,7 @@ const wchar_t* winfo_path(int key) {
 	return result.utf16();
 }
 
-const void* winfo_handle(int key) {
+void* fwi_handle(int key) {
 	WInfo* info = &infomap[key];
 	HWND hwnd = info->GetHandle();
 	

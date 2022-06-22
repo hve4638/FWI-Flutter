@@ -1,0 +1,286 @@
+2022-06-09 21:56:14.986429|studio64.exe|foregroundwindowinfo – trace_log_list.dart [foregroundwindowinfo]
+2022-06-09 21:56:15.484225|explorer.exe|log
+2022-06-09 21:56:19.494649|Notepad.exe|*test.txt - 메모장
+2022-06-09 21:56:21.893986|explorer.exe|log
+2022-06-09 21:56:22.881466|studio64.exe|foregroundwindowinfo – trace_log_list.dart [foregroundwindowinfo]
+2022-06-09 23:59:07.425628|chrome.exe|Dart Default Parameter Values - W3Adda - Chrome
+2022-06-09 23:59:07.921602|explorer.exe|flutter
+2022-06-09 23:59:08.729726|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:26:40.447564|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:26:41.238416|chrome.exe|새 탭 - Chrome
+2022-06-10 02:26:41.744837|explorer.exe|
+2022-06-10 02:26:46.338932|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:26:46.850189|chrome.exe|새 탭 - Chrome
+2022-06-10 02:26:49.147109|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:26:57.639549|voicemeeter.exe|VoiceMeeter
+2022-06-10 02:27:05.345707|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:28:57.145470|chrome.exe|새 탭 - Chrome
+2022-06-10 02:28:59.138419|unknown|
+2022-06-10 02:29:01.045700|chrome.exe|새 탭 - Chrome
+2022-06-10 02:29:05.637941|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:32:28.942383|unknown|
+2022-06-10 02:32:29.047400|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:34:21.647021|msedge.exe|(1746) Q. 월트 디즈니는 어떤 사람이었을까요? - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:34:23.950289|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:36:18.715371|chrome.exe|새 탭 - Chrome
+2022-06-10 02:36:20.917229|unknown|
+2022-06-10 02:36:21.024542|chrome.exe|새 탭 - Chrome
+2022-06-10 02:36:21.318186|explorer.exe|flutter
+2022-06-10 02:36:24.715308|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:36:26.819903|MouseWithoutBordersHelper.exe|
+2022-06-10 02:36:28.115862|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:36:53.722826|explorer.exe|flutter
+2022-06-10 02:36:55.322761|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:36:56.117042|chrome.exe|새 탭 - Chrome
+2022-06-10 02:36:59.926772|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:37:37.111898|msedge.exe|(1746) 1년만에 다시 만난 타카모리!! - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:37:41.512097|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 02:39:26.483683|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:16.510400|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:41:18.638307|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:19.707748|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:41:20.498759|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:22.707420|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:41:23.400748|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:24.100094|explorer.exe|
+2022-06-10 02:41:26.006929|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:26.599351|unknown|
+2022-06-10 02:41:26.708538|explorer.exe|
+2022-06-10 02:41:29.902014|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:30.302126|explorer.exe|
+2022-06-10 02:41:30.693418|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:32.195187|explorer.exe|
+2022-06-10 02:41:34.401304|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:35.096913|explorer.exe|
+2022-06-10 02:41:35.806453|chrome.exe|새 탭 - Chrome
+2022-06-10 02:41:36.896405|explorer.exe|
+2022-06-10 02:41:37.595580|unknown|
+2022-06-10 02:41:37.708685|chrome.exe|새 탭 - Chrome
+2022-06-10 02:43:12.969355|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:43:17.973346|explorer.exe|
+2022-06-10 02:43:22.977983|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 02:47:46.484347|msedge.exe|(1746) 이렇게 작은 컴퓨터에서 오버워치가 144Hz로 잘 돌아간다구요? - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:47:51.783226|studio64.exe|foregroundwindowinfo – log_list.dart [foregroundwindowinfo]
+2022-06-10 02:52:20.879167|unknown|
+2022-06-10 02:52:20.973172|msedge.exe|(1746) 이렇게 작은 컴퓨터에서 오버워치가 144Hz로 잘 돌아간다구요? - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:52:23.884953|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 02:53:50.381250|msedge.exe|(1746) 이렇게 작은 컴퓨터에서 오버워치가 144Hz로 잘 돌아간다구요? - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:53:54.786583|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 02:55:49.278055|msedge.exe|(1746) 이렇게 작은 컴퓨터에서 오버워치가 144Hz로 잘 돌아간다구요? - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 02:55:52.885713|studio64.exe|foregroundwindowinfo – log_page.dart [foregroundwindowinfo]
+2022-06-10 02:57:04.483343|explorer.exe|
+2022-06-10 02:57:07.173754|chrome.exe|새 탭 - Chrome
+2022-06-10 02:57:12.786471|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 02:57:32.278547|explorer.exe|
+2022-06-10 02:57:32.373005|chrome.exe|flutter - 알파벳순으로 목록 정렬 - CODE 해결 된 문제 - Chrome
+2022-06-10 02:58:44.278213|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 02:59:12.479051|chrome.exe|얕은 복사(shallow copy), 깊은 복사(deep copy) - 으어 - Chrome
+2022-06-10 02:59:13.774604|unknown|
+2022-06-10 02:59:13.883760|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 03:01:20.780286|chrome.exe|얕은 복사(shallow copy), 깊은 복사(deep copy) - 으어 - Chrome
+2022-06-10 03:01:29.784160|studio64.exe|foregroundwindowinfo – log_list.dart [foregroundwindowinfo]
+2022-06-10 03:05:58.878830|unknown|
+2022-06-10 03:05:58.987383|msedge.exe|(1746) 그래픽카드 구매 초보자용 가이드! 구매하기 전에 간단한 기초 지식부터 쌓자고요!! - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:06:01.082088|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:06:31.083203|msedge.exe|(1746) 공식행사에서도 빛을 발하는 야바이리스 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:06:37.085377|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:09:30.274778|MouseWithoutBordersHelper.exe|
+2022-06-10 03:09:30.579083|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:10:22.379753|unknown|
+2022-06-10 03:10:23.676036|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:01.180760|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:03.870250|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:04.663602|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:05.374698|explorer.exe|
+2022-06-10 03:11:10.667681|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:13.862171|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:14.768045|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:18.270537|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:22.263850|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:23.473203|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:24.165933|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:25.471628|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:26.371632|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:26.773601|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:27.168315|unknown|
+2022-06-10 03:11:27.276833|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:11:28.163761|chrome.exe|새 탭 - Chrome
+2022-06-10 03:11:28.671497|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:12:22.265198|chrome.exe|새 탭 - Chrome
+2022-06-10 03:12:24.374158|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:13:35.301439|chrome.exe|새 탭 - Chrome
+2022-06-10 03:13:43.699066|explorer.exe|작업 전환
+2022-06-10 03:13:43.792149|chrome.exe|새 탭 - Chrome
+2022-06-10 03:14:56.503382|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 03:15:38.998034|msedge.exe|(1746) [주식매매법] 똘똘똘이의 일상매매법 하이라이트 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:16:04.201757|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:16:46.023251|msedge.exe|(1746) 미국은 왜 아이들의 희생을 보고만 있는가 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:16:55.105408|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:19:23.827387|unknown|
+2022-06-10 03:19:23.935237|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:19:26.631020|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:19:35.927974|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:19:36.826132|explorer.exe|
+2022-06-10 03:19:40.538871|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:06.234540|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:07.628193|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:10.030072|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:11.429203|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:12.138105|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:13.132356|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:34.327108|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:43.729660|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:47.534927|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:49.337094|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:49.834366|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:50.329580|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:20:50.735692|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:20:51.138351|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:21:00.826928|msedge.exe|(1746) 미오샤, 눈물과 된장국과 함께 100만 달성!! - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:21:04.835095|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:21:05.237265|unknown|
+2022-06-10 03:21:08.040967|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:21:13.531605|msedge.exe|(1746) 공포를 모르는 남자의 파피 플레이 타임 챕터2 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:21:29.936385|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:21:32.834256|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:22:09.170987|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:23:30.736102|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:25:07.244373|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:25:08.132105|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:26:51.236700|msedge.exe|(1746) 공포를 모르는 남자의 파피 플레이 타임 챕터2 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:27:25.838974|studio64.exe|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-06-10 03:27:32.426076|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:27:33.326862|studio64.exe|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-06-10 03:27:36.727472|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:27:37.332554|studio64.exe|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-06-10 03:27:37.830831|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:35:29.660484|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 03:35:30.550289|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:35:31.848268|explorer.exe|
+2022-06-10 03:35:33.857254|unknown|
+2022-06-10 03:35:34.648612|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 03:35:48.554935|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:35:49.046873|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 03:35:50.748612|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:35:51.154112|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-10 03:36:14.652154|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:36:15.258706|studio64.exe|foregroundwindowinfo – log_page.dart [foregroundwindowinfo]
+2022-06-10 03:36:16.260797|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:36:17.350988|unknown|
+2022-06-10 03:36:17.460542|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:36:29.851188|studio64.exe|foregroundwindowinfo – log_page.dart [foregroundwindowinfo]
+2022-06-10 03:36:39.154003|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-10 03:36:41.649894|studio64.exe|foregroundwindowinfo – log_page.dart [foregroundwindowinfo]
+2022-06-10 03:40:00.848349|msedge.exe|(1746) 셜록현준 교수님의 '도시의 발명' 특강 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:40:03.855874|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:40:24.355403|msedge.exe|(1746) 셜록현준 교수님의 '도시의 발명' 특강 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:40:27.253878|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-06-10 03:48:13.448942|msedge.exe|(1746) 셜록현준 교수님의 '도시의 발명' 특강 - YouTube - 개인 - Microsoft​ Edge
+2022-06-10 03:48:49.661002|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-06-10 03:49:27.755148|chrome.exe|[플러터] Stateful Class 내부에 접근하기 — 코딩으로 세계정복 - Chrome
+2022-06-12 19:55:38.324209|MouseWithoutBordersHelper.exe|
+2022-06-12 19:55:41.924658|explorer.exe|
+2022-06-12 19:55:44.024942|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:55:44.412238|explorer.exe|
+2022-06-12 19:55:45.521453|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:55:45.924190|explorer.exe|
+2022-06-12 19:55:48.015984|unknown|
+2022-06-12 19:55:48.123522|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:55:48.418615|explorer.exe|
+2022-06-12 19:55:55.523933|MouseWithoutBordersHelper.exe|
+2022-06-12 19:55:58.225299|explorer.exe|
+2022-06-12 19:55:58.816766|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:56:14.016021|explorer.exe|
+2022-06-12 19:56:19.121189|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:56:25.119993|explorer.exe|
+2022-06-12 19:56:37.021956|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-06-12 19:57:55.725120|explorer.exe|
+2022-06-12 19:57:58.020680|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:58:20.330399|explorer.exe|
+2022-06-12 19:58:22.532297|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:58:43.512927|explorer.exe|
+2022-06-12 19:58:45.610353|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:58:46.215694|explorer.exe|
+2022-06-12 19:58:47.314793|unknown|
+2022-06-12 19:58:47.424997|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:58:47.721320|explorer.exe|
+2022-06-12 19:58:49.021096|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:58:50.013985|explorer.exe|
+2022-06-12 19:58:50.323364|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 19:59:06.711350|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 19:59:26.120688|MouseWithoutBordersHelper.exe|
+2022-06-12 19:59:26.520687|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:00:03.016662|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 20:00:08.716868|explorer.exe|
+2022-06-12 20:00:13.710964|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:00:18.025129|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 20:02:36.613447|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:02:50.724370|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 20:02:57.716107|explorer.exe|
+2022-06-12 20:03:08.822952|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 20:03:10.615911|explorer.exe|
+2022-06-12 20:03:13.515586|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:03:15.119899|unknown|
+2022-06-12 20:03:16.122056|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-12 20:03:48.322962|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:03:50.025050|obs64.exe|OBS 27.2.4 (64-bit, windows) - 프로파일: 제목없음 - 장면: 제목없음
+2022-06-12 20:03:57.617399|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:04:06.523913|MouseWithoutBordersHelper.exe|
+2022-06-12 20:04:09.814988|unknown|
+2022-06-12 20:04:09.923086|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:04:10.026256|MouseWithoutBordersHelper.exe|
+2022-06-12 20:04:29.914501|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:04:36.324956|MouseWithoutBordersHelper.exe|
+2022-06-12 20:04:36.528377|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:05:00.329943|obs64.exe|OBS 27.2.4 (64-bit, windows) - 프로파일: 제목없음 - 장면: 제목없음
+2022-06-12 20:05:03.522959|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:05:04.019328|explorer.exe|
+2022-06-12 20:05:37.527191|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:05:45.625421|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:06:46.624954|chrome.exe|실시간 스트리밍 - YouTube Studio - Chrome
+2022-06-12 20:06:47.619820|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:14:58.211611|explorer.exe|
+2022-06-12 20:14:59.611773|ApplicationFrameHost.exe|설정
+2022-06-12 20:15:17.523958|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:16:01.915286|MouseWithoutBordersHelper.exe|
+2022-06-12 20:16:02.620785|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:16:04.516147|chrome.exe|제목 없는 문서 - Google Docs - Chrome
+2022-06-12 20:16:09.112856|MicrosoftWhiteboard.exe|Microsoft Whiteboard
+2022-06-12 20:16:09.515041|studio64.exe|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-06-20 00:51:52.170718|Count: 8066|test
+2022-06-20 00:52:12.753273|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:52:13.763449|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:52:14.756706|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:52:23.258259|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:52:24.264945|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:52:25.256230|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:52:26.253844|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:52:29.262216|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:24.749724|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:53:25.264957|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:25.762767|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:53:26.257291|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:33.755323|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:53:35.263351|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:36.752163|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:53:37.253681|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:46.250073|obs64.exe|OBS 27.2.4 (64-bit, windows) - 프로파일: 제목없음 - 장면: 제목없음
+2022-06-20 00:53:48.756479|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:53:57.763298|explorer.exe|Foregroundwindowinfo
+2022-06-20 00:53:58.260149|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-20 00:54:01.756552|obs64.exe|OBS 27.2.4 (64-bit, windows) - 프로파일: 제목없음 - 장면: 제목없음
+2022-06-20 00:54:02.258419|explorer.exe|
+2022-06-22 15:43:51.519093|explorer.exe|
+2022-06-22 15:43:52.316254|studio64.exe|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-06-22 15:43:55.723105|explorer.exe|
+2022-06-22 15:48:33.129469|explorer.exe|
+2022-06-22 15:48:33.517781|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-06-22 15:48:35.925158|explorer.exe|
+2022-06-22 15:48:38.526441|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-06-22 15:48:39.322725|explorer.exe|
+2022-06-22 15:53:03.552374|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-06-22 15:53:10.952521|explorer.exe|
+2022-06-22 15:53:31.364112|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-06-22 15:53:44.151567|unknown|
+2022-06-22 15:53:44.557426|explorer.exe|
+2022-06-22 15:54:09.558177|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]

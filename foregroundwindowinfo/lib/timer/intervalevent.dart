@@ -17,6 +17,7 @@ class IntervalEvent {
 
   stop() {
     timer?.cancel();
+    timer = null;
     _isRunning = false;
   }
 

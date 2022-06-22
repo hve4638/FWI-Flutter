@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "wininfo" "\0"
+            VALUE "FileDescription", "foregroundwindowinfo" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "wininfo" "\0"
+            VALUE "InternalName", "foregroundwindowinfo" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "wininfo.exe" "\0"
-            VALUE "ProductName", "wininfo" "\0"
+            VALUE "OriginalFilename", "foregroundwindowinfo.exe" "\0"
+            VALUE "ProductName", "foregroundwindowinfo" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(wininfo LANGUAGES CXX)
+project(foregroundwindowinfo LANGUAGES CXX)
 
-set(BINARY_NAME "wininfo")
+set(BINARY_NAME "foregroundwindowinfo")
 
 cmake_policy(SET CMP0063 NEW)
 

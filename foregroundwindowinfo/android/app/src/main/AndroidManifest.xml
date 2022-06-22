@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wininfo">
+    package="com.example.foregroundwindowinfo">
    <application
-        android:label="wininfo"
+        android:label="foregroundwindowinfo"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

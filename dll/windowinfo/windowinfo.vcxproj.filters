@@ -45,7 +45,7 @@
     <ClInclude Include="windowinfo.h">
       <Filter>헤더 파일\windowinfo</Filter>
     </ClInclude>
-    <ClInclude Include="tcw.h">
+    <ClInclude Include="fwi.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -59,7 +59,7 @@
     <ClCompile Include="resstr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="tcw.cpp">
+    <ClCompile Include="fwi.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="winfomap.cpp">

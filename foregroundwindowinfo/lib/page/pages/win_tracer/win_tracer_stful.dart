@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import './win_tracer.dart';
 
-class WinTracerWidget extends StatefulWidget {
-  const WinTracerWidget({
+class WinTracerStatefulWidget extends StatefulWidget implements WinTracerWidget {
+  const WinTracerStatefulWidget({
     Key? key,
     required this.onInitState,
   }) : super(key: key);
@@ -11,12 +12,12 @@ class WinTracerWidget extends StatefulWidget {
       context.findAncestorStateOfType<WinTracerState>();
 
   @override
-  State<WinTracerWidget> createState() => WinTracerState();
+  State<WinTracerStatefulWidget> createState() => WinTracerState();
 }
 
-class WinTracerState<T extends WinTracerWidget> extends State<T> {
-  enableTrace() {}
-  disableTrace() {}
+class WinTracerState<T extends WinTracerStatefulWidget> extends State<T> implements WinTracer {
+  onEnable() {}
+  onDisable() {}
 
   @override
   void initState() {

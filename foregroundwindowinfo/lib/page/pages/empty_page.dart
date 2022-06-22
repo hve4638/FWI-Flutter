@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import '/windowinfo/foregroundwindowinfo.dart';
+import 'package:fluent_ui/fluent_ui.dart';
+import '../../foregroundwindowinfo/foreground_window_info.dart';
 import '/timer/intervalevent.dart';
-import 'wintracerstate.dart';
+import 'win_tracer/win_tracer_stful.dart';
 
-class EmptyPage extends WinTracerWidget {
+class EmptyPage extends WinTracerStatefulWidget {
   const EmptyPage({
     Key? key,
     required onInitState,
@@ -18,7 +18,20 @@ class EmptyPage extends WinTracerWidget {
 }
 
 class _EmptyPageState extends WinTracerState<EmptyPage> {
+  @override
+  onEnable() {
+    print("Enable EmptyPage");
+  }
 
+  @override
+  onDisable() {
+    print("Disable EmptyPage");
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
 
 

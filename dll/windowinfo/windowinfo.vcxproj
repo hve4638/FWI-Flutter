@@ -24,7 +24,7 @@
     <ProjectGuid>{457a3b53-1f88-42d6-8344-3bb3217e67cc}</ProjectGuid>
     <RootNamespace>windowinfo</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>foregroundwindoinfo</ProjectName>
+    <ProjectName>fwi</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -109,7 +109,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;WINDOWINFO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;WINDOWINFO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);FWI_EXPORTS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -143,7 +143,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="resstr.h" />
-    <ClInclude Include="tcw.h" />
+    <ClInclude Include="fwi.h" />
     <ClInclude Include="windowinfo.h" />
     <ClInclude Include="winfo.h" />
     <ClInclude Include="winfoactual.h" />
@@ -159,7 +159,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="resstr.cpp" />
-    <ClCompile Include="tcw.cpp" />
+    <ClCompile Include="fwi.cpp" />
     <ClCompile Include="winfoactual.cpp" />
     <ClCompile Include="winfomap.cpp" />
   </ItemGroup>
