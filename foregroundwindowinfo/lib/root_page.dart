@@ -5,16 +5,22 @@ import 'page/page_list.dart';
 import 'timer/intervalevent.dart';
 import 'page/pages/win_tracer/win_tracer.dart';
 import 'page/pages/win_tracer/win_tracer_stful.dart';
-import 'fwiconfig/fwi_config.dart';
+import 'package:wininfo/fwiconfig/fwi_config.dart';
+import 'package:wininfo/fwiconfig/alias_dic.dart';
 
 class RootPage extends StatefulWidget {
   RootPage({
     Key? key,
-    required this.config
+    required this.config,
+    required this.aliasDictionary,
   }) : super(key: key) {
-    tracer = ForegroundWindowTracer(config: config.readonly);
+    tracer = ForegroundWindowTracer(
+      config: config.readonly,
+      aliasDictionary: aliasDictionary
+    );
   }
   final FwiConfig config;
+  final AliasDictionary aliasDictionary;
   ForegroundWindowTracer? tracer;
 
   @override
@@ -32,7 +38,6 @@ class RootPageState extends State<RootPage> {
   void initState() {
     super.initState();
 
-    var config = widget.config;
     var pageInitializer = PageInitializer(
       onInitState : (state) {
         _currentState = state;
@@ -40,7 +45,8 @@ class RootPageState extends State<RootPage> {
       },
       onToggle : toggle,
       foregroundWindowTracer: _tracer,
-      config : config,
+      config : widget.config,
+      aliasDictionary : widget.aliasDictionary,
     );
 
     initPageList(_pages, pageInitializer);
@@ -58,6 +64,7 @@ class RootPageState extends State<RootPage> {
   }
 
   enableCurrentPage() {
+    print("Enabled >> $_currentState");
     _currentState?.onEnable();
   }
 

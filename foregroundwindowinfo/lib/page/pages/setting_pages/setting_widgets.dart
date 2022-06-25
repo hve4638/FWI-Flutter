@@ -3,59 +3,6 @@ import 'package:fluent_ui/fluent_ui.dart';
 const double globalFontSize = 16;
 const double globalTitleFontSize = 32;
 
-class SettingContainer extends StatefulWidget {
-  SettingContainer(this.name, {
-    Key? key,
-    required this.body,
-  }) : super(key: key) {
-  }
-  final Widget body;
-  final String name;
-
-  static SettingContainerState? of(BuildContext context) =>
-      context.findAncestorStateOfType<SettingContainerState>();
-
-  @override
-  State<SettingContainer> createState() => SettingContainerState();
-}
-
-class SettingContainerState extends State<SettingContainer> {
-  @override
-  Widget build(BuildContext context) {
-    var w = SettingContainer.of(context);
-    print("??? $w");
-
-    return Column(
-      children: [
-        Container(
-          height : 80,
-          padding: const EdgeInsets.all(15),
-          child: Row(
-            children: [
-              TextButton(
-                onPressed: () {},
-                child: Text(widget.name,
-                  style: TextStyle(
-                    fontSize : globalTitleFontSize,
-                  ),
-                ),
-                style: ButtonStyle(
-                  foregroundColor: ButtonState.all(Colors.black),
-                ),
-              )
-            ],
-          ),
-        ),
-        Expanded(
-          child: widget.body,
-        )
-      ],
-    );
-  }
-}
-
-
-
 buttonBox(String name, {
   required IconData iconData,
   required Function() onPressed,

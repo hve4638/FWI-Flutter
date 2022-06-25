@@ -1,12 +1,14 @@
+import 'package:wininfo/fwiconfig/alias_dic.dart';
+
 import '../foregroundwindowinfo/foreground_window_info.dart';
 import '../foregroundwindowinfo/foreground_window_tracer.dart';
 import '../fwiconfig/fwi_config.dart';
-import 'pages/run_page.dart';
-import 'pages/rank_page.dart';
-import 'pages/test_page.dart';
-import 'pages/empty_page.dart';
-import 'pages/timeline_page.dart';
-import 'pages/setting_pages/setting_main_page.dart';
+import './pages/run_page.dart';
+import './pages/rank_page.dart';
+import './pages/test_page.dart';
+import './pages/empty_page.dart';
+import './pages/timeline_page.dart';
+import './pages/setting_page.dart';
 import './navigate_page/navigate_page.dart';
 
 class PageInitializer {
@@ -15,12 +17,14 @@ class PageInitializer {
     required this.onToggle,
     required this.foregroundWindowTracer,
     required this.config,
+    required this.aliasDictionary
   }) {
     foregroundWindowInfo = foregroundWindowTracer.info();
   }
   final Function onInitState;
   final Function onToggle;
   final FwiConfig config;
+  final AliasDictionary aliasDictionary;
   ForegroundWindowInfo ?foregroundWindowInfo;
   ForegroundWindowTracer foregroundWindowTracer;
 
@@ -69,11 +73,10 @@ class PageInitializer {
   }
 
   settingPage() {
-    return NavigatePage(
-        child: SettingPage(
-          onInitState : onInitState,
-          config : config,
-        )
+    return SettingPage(
+      onInitState : onInitState,
+      config : config,
+      aliasDictionary : aliasDictionary,
     );
   }
 }

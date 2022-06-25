@@ -6,10 +6,15 @@ import 'foreground_window_info.dart';
 import 'windowinfo/windowinfo.dart';
 import 'trace_logger.dart';
 import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
+import 'package:wininfo/fwiconfig/alias_dic.dart';
 
 class ForegroundWindowTracer {
-  ForegroundWindowTracer({required this.config});
+  ForegroundWindowTracer({
+    required this.config,
+    required this.aliasDictionary
+  });
   final FwiConfigReadonly config;
+  final AliasDictionary aliasDictionary;
   final _info = ForegroundWindowInfo();
   final logger = TraceLogger("test.txt");
   String _time = "00:00:00";
@@ -41,16 +46,21 @@ class ForegroundWindowTracer {
       _time = timer.getTime();
     });
 
+    _info.isRunning = true;
+
     tracer.start(config.traceUpdateTime, () async {
       var winfo = WindowInfoLazy();
       var _isForeground = _appPointer == winfo.pointer;
-      var _isChanged = _info.name != winfo.name;
+      var _isChanged = _info.actualName != winfo.name;
 
-      if (!_isForeground) {
+      if (winfo.name == "unknown") {
+
+      } else if (!_isForeground) {
         _info.set(
           title: winfo.title,
           name: winfo.name,
           time: _time,
+          alias: aliasDictionary[winfo.name],
           date: DateTime.now(),
         );
 
@@ -65,8 +75,6 @@ class ForegroundWindowTracer {
 
       winfo.dispose();
     });
-
-    _info.isRunning = true;
   }
 
   stop() {
