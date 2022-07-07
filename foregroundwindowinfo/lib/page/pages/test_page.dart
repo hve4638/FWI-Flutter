@@ -1,9 +1,12 @@
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
+import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
+
+import './win_tracer/win_tracer_stful.dart';
 import '/foregroundwindowinfo/foreground_window_info.dart';
 import '/timer/intervalevent.dart';
-import './win_tracer/win_tracer_stful.dart';
-import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
-import 'package:fluent_ui/fluent_ui.dart';
+
+import 'package:wininfo/fwiconfig/config_container.dart';
+
 
 class TestPage extends WinTracerStatefulWidget {
   TestPage({
@@ -27,6 +30,9 @@ class _TestPageState extends WinTracerState<TestPage> {
   var _configTraceUpdateTime = 0;
   var _configTimelineUpdateTime = 0;
   var _configRankUpdateTime = 0;
+  var _ipsText = "";
+  var _ipsCount = -1;
+  var testMap = { "test" : "test1" };
 
   @override
   onEnable() {
@@ -81,6 +87,49 @@ class _TestPageState extends WinTracerState<TestPage> {
               )
           ),
         ),
+        Expanded(
+          child: Center(
+            child: Column(
+              children: [
+                const Text("Map SetState Test"),
+                Text("${testMap['test']}"),
+                Button(
+                  onPressed : () {
+                    setState(() {
+                      testMap['test'] = "test2";
+                    });
+                  },
+                  child : Text("push")
+                ),
+              ]
+            )
+          ),
+        ),
+        Expanded(
+          child : Center(
+              child: Column(
+                  children: [
+                    const Text("IgnoreProcess Set"),
+                    Text(_ipsText),
+                    Text("count: $_ipsCount"),
+                    Button(
+                        onPressed : () {
+                          var ips = ConfigContainer.ignoreProcesses(context)!;
+                          var text = "";
+                          for(var name in ips.toList()) {
+                            text += name + " ";
+                          }
+                          setState(() {
+                            _ipsText = text;
+                            _ipsCount = ips.length;
+                          });
+                        },
+                        child : Text("push")
+                    ),
+                  ]
+              )
+          )
+        )
       ],
     );
   }

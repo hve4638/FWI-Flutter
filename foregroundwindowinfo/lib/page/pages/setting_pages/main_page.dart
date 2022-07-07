@@ -1,28 +1,44 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import '../win_tracer/win_tracer_stful.dart';
-import 'package:wininfo/fwiconfig/fwi_config.dart';
-import './alias_page.dart';
-import './process_except_page.dart';
-import './setting_widgets.dart';
-import 'setting_navigator.dart';
 import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/config_container.dart';
+import 'package:wininfo/fwiconfig/fwi_config.dart';
 
-class MainPage extends WinTracerStatefulWidget {
-  const MainPage({
+import '../win_tracer/win_tracer_stful.dart';
+
+import './alias_page.dart';
+import './ignore_process_page.dart';
+import './setting_widgets.dart';
+import './setting_sub_page.dart';
+import './setting_navigator.dart';
+
+class MainPage extends StatefulWidget implements SettingSubPage {
+  MainPage({
     Key? key,
-    required onInitState,
     required this.config,
-    required this.aliasDictionary
-  }) : super(key: key, onInitState : onInitState);
+    required this.aliasDictionary,
+  }) : super(key: key);
+  void Function()? navigationPop;
   final FwiConfig config;
   final AliasDictionary aliasDictionary;
 
   @override
+  get title => "설정";
+
+  @override
   State<MainPage> createState() => _MainPageState();
+
+  @override
+  dispose() {
+    print("dispose Main Page");
+  }
+
+  @override
+  setEventPop(pop) {
+    navigationPop = pop;
+  }
 }
 
-
-class _MainPageState extends WinTracerState<MainPage> {
+class _MainPageState extends State<MainPage> {
   var controllerList = <String, TextEditingController>{};
 
   @override
@@ -110,23 +126,30 @@ class _MainPageState extends WinTracerState<MainPage> {
               iconData : FluentIcons.trackers,
               onPressed : () {
                 SettingNavigatorWidget.navigator(context).push(AliasPage(
-                  aliasDictionary : widget.aliasDictionary
+                  aliasDictionary : widget.aliasDictionary,
                 ));
               }
           ),
           buttonBox("예외 프로세스",
               iconData : FluentIcons.trackers,
               onPressed : () {
-                SettingNavigatorWidget.navigator(context).push(ProcessExceptPage());
+                var configContainer = ConfigContainer.of(context)!;
+                var ignoreProcesses = configContainer.ignoreProcesses;
+                var noAliases = configContainer.noAliases;
+
+                SettingNavigatorWidget.navigator(context).push(
+                  IgnoreProcessPage(
+                    config: widget.config,
+                    noAliases: noAliases,
+                    ignoreProcesses: ignoreProcesses,
+                  )
+                );
               }
           ),
           buttonBox("test",
               iconData : FluentIcons.trackers,
               onPressed : () {
-                var nav = SettingNavigatorWidget.navigator(context);
-
-                widget.aliasDictionary.toList();
-                widget.aliasDictionary.save();
+                print(ConfigContainer.of(context)?.text);
               }
           ),
         ]

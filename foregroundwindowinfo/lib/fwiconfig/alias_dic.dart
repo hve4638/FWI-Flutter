@@ -3,17 +3,29 @@ import 'dart:io';
 
 class AliasDictionary {
   Map<String, dynamic> map = {};
+  final _noAliases = NoAliasDictionary();
   final String filename;
+  NoAliasDictionary get noAlias {
+    return _noAliases;
+  }
   AliasDictionary(this.filename);
 
-  String? operator[](String processName) {
-    var alias = map[processName];
+  String? operator[](String name) {
+    if (map.containsKey(name)) {
+      return map[name];
+    } else {
+      _noAliases.add(name);
 
-    return map[processName];
+      return null;
+    }
   }
 
-  operator[]=(String processName, String alias) {
-    map[processName] = alias;
+  operator[]=(String name, String alias) {
+    map[name] = alias;
+
+    if (_noAliases.contains(name)) {
+      _noAliases.remove(name);
+    }
   }
 
   toList() {
@@ -25,8 +37,8 @@ class AliasDictionary {
     return list;
   }
 
-  remove(String processName) {
-    map.remove(processName);
+  remove(String name) {
+    map.remove(name);
   }
 
   save() async {
@@ -34,6 +46,7 @@ class AliasDictionary {
     var jsonString = jsonEncode(map);
 
     file.writeAsString(jsonString);
+    print("save...");
   }
 
   load() async {
@@ -43,6 +56,45 @@ class AliasDictionary {
       var jsonString = await file.readAsString();
       map = jsonDecode(jsonString);
     }
+  }
+
+  forEach(Function(String, dynamic) callback) {
+    return map.forEach(callback);
+  }
+}
+
+class NoAliasDictionary {
+  final Set<String> _noAlias = {};
+  NoAliasDictionary();
+
+  get raw => _noAlias;
+
+  bool add(name) {
+    return _noAlias.add(name);
+  }
+
+  remove(String name) {
+    _noAlias.remove(name);
+  }
+
+  bool contains(name) {
+    return _noAlias.contains(name);
+  }
+
+  toList() {
+    var lines = _noAlias.toList();
+    lines.sort();
+
+    var list = <String>[];
+    for (var key in lines) {
+      list.add(key);
+    }
+
+    return list;
+  }
+
+  forEach(Function(String) callback) {
+    return _noAlias.forEach(callback);
   }
 }
 

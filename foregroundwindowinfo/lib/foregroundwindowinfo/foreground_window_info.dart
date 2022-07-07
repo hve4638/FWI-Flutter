@@ -29,6 +29,12 @@ class ForegroundWindowInfo {
     _alias = alias;
   }
 
+  setTime({
+    required String time
+  }) {
+    _time = time;
+  }
+
   void copy(ForegroundWindowInfo source) {
     isRunning = source.isRunning;
     _title = source.title;

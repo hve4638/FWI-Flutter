@@ -1,30 +1,83 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import 'package:wininfo/fwiconfig/alias_dic.dart';
 import 'package:wininfo/page/navigate_page/navigate_page.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
 import 'package:wininfo/page/pages/win_tracer/win_tracer.dart';
-
 import '/timer/intervalevent.dart';
 import 'setting_pages/main_page.dart';
 import 'setting_pages/setting_navigator.dart';
 import './setting_pages/setting_sub_page.dart';
 
-class SettingPage extends SettingNavigatorWidget {
+class SettingPage extends SettingNavigatorWidget implements WinTracerWidget {
   const SettingPage({
     Key? key,
-    required onInitState,
-    required config,
-    required aliasDictionary,
-  }) : super(key: key, onInitState: onInitState, config : config, aliasDictionary: aliasDictionary);
+    required this.onInitState,
+    required this.config,
+    required this.aliasDictionary,
+  }) : super(key: key);
+  final Function onInitState;
+  final FwiConfig config;
+  final AliasDictionary aliasDictionary;
 
   @override
   State<SettingNavigatorWidget> createState() => SettingPageState();
 }
 
-class SettingPageState extends SettingNavigatorWidgetState {
+class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Later implements WinTracer {
   final titleSize = 32.0;
   final _titleNames = <String>[];
+  final _subpages = <SettingSubPage>[];
   NavigatorState? navigatorState;
   var _titles = <Widget>[];
+  SettingSubPage? mainPage;
+
+  @override
+  void initState() {
+    super.initState();
+
+    mainPage = MainPage(
+      config : widget.config,
+      aliasDictionary: widget.aliasDictionary,
+    );
+    _titles.add( getTitleWidget("설정", context: context) );
+    _subpages.add( mainPage! );
+
+    laterCall((timeStamp) {
+      widget.onInitState(this);
+    });
+  }
+
+  @override
+  push<T extends Object?>(BuildContext context, SettingSubPage widget) {
+    navigatorState = Navigator.of(context);
+    widget.setEventPop(() {
+      _navigatorPop();
+      refreshTitles();
+    });
+
+    _subpages.add(widget);
+
+    navigatorState?.push(
+      FluentPageRoute(builder: (context) => widget as Widget)
+    );
+
+    _titles.add( getTitleWidget(widget.title, context: context) );
+    refreshTitles();
+  }
+
+  bool _navigatorPop() {
+    if (navigatorState?.canPop() ?? false) {
+      navigatorState?.pop();
+      _titles.removeLast();
+
+      var subpage = _subpages.removeLast();
+      subpage.dispose();
+
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   getTitleWidget(String name, {
     required BuildContext context
@@ -49,40 +102,12 @@ class SettingPageState extends SettingNavigatorWidgetState {
   }
 
   @override
-  push<T extends Object?>(BuildContext context, SettingSubPage widget) {
-    navigatorState = Navigator.of(context);
-    widget.setEventPop(() {
-      navigatorState?.pop();
-      _titles.removeLast();
-      refreshTitles();
-    });
-
-    navigatorState?.push(
-      FluentPageRoute(builder: (context) => widget as Widget)
-    );
-
-    _titles.add( getTitleWidget(widget.title, context: context) );
-    refreshTitles();
-  }
-
-  @override
   void pop<T>(BuildContext context) {
-    if (navigatorState?.canPop() ?? false) {
-      navigatorState?.pop();
-    }
-    _titles.removeLast();
+    _navigatorPop();
     refreshTitles();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-
-    _titles.add( getTitleWidget("설정", context: context) );
   }
 
   refreshTitles() {
-    //print("Refresh: ${[..._titles]}");
     setState(() {
       _titles = [..._titles];
     });
@@ -102,22 +127,26 @@ class SettingPageState extends SettingNavigatorWidgetState {
           ),
           Expanded(
             child: NavigatePage(
-              child: MainPage(
-                config : widget.config,
-                onInitState: widget.onInitState,
-                aliasDictionary: widget.aliasDictionary,
-              )
+              child: mainPage as Widget
             )
           )
         ],
       );
   }
 
+  @override
   onEnable() {
-    print("setting enable");
+
   }
 
+  @override
   onDisable() {
+    while(_navigatorPop()) {}
+
+    var subpage = _subpages.removeLast();
+    subpage.dispose();
+    _titles.removeLast();
+
     print("setting disable");
   }
 }

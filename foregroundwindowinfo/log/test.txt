@@ -1475,3 +1475,132 @@
 2022-06-25 20:23:46.490103|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
 2022-06-25 20:36:22.495176|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
 2022-06-25 20:36:24.490373|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:07:36.273759|크롬|새 탭 - Chrome
+2022-07-02 03:07:38.279042|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:07:39.279006|크롬|새 탭 - Chrome
+2022-07-02 03:37:37.124288|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:37:38.122587|크롬|새 탭 - Chrome
+2022-07-02 03:37:45.122504|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:37:47.125539|크롬|새 탭 - Chrome
+2022-07-02 03:37:48.119714|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:37:50.128288|크롬|새 탭 - Chrome
+2022-07-02 03:37:52.127424|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:37:53.122843|크롬|새 탭 - Chrome
+2022-07-02 03:37:54.123578|studio64.exe|foregroundwindowinfo – setting_navigator.dart [foregroundwindowinfo]
+2022-07-02 03:38:51.121303|크롬|새 탭 - Chrome
+2022-07-02 03:38:56.122376|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-02 03:39:26.740039|크롬|새 탭 - Chrome
+2022-07-02 03:41:14.071952|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-02 03:41:26.058651|크롬|새 탭 - Chrome
+2022-07-02 03:41:32.057506|studio64.exe|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-02 03:45:09.736676|크롬|새 탭 - Chrome
+2022-07-02 03:45:11.747016|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-07-02 03:50:42.007968|Count: 8257|test
+2022-07-02 03:51:25.272456|크롬|새 탭 - Chrome
+2022-07-02 03:51:26.275123|studio64.exe|foregroundwindowinfo – root_page.dart [foregroundwindowinfo]
+2022-07-02 03:51:27.266910|크롬|새 탭 - Chrome
+2022-07-02 03:51:52.264110|studio64.exe|foregroundwindowinfo – root_page.dart [foregroundwindowinfo]
+2022-07-02 03:51:56.269297|크롬|새 탭 - Chrome
+2022-07-02 03:52:58.264319|studio64.exe|foregroundwindowinfo – root_page.dart [foregroundwindowinfo]
+2022-07-02 04:11:57.260300|msedge.exe|(122) 메탈킴 라오루 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-02 04:12:25.274225|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-07-02 04:12:27.273728|크롬|새 탭 - Chrome
+2022-07-02 04:12:29.264363|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-07-02 04:12:31.269885|크롬|새 탭 - Chrome
+2022-07-02 04:12:32.272224|studio64.exe|foregroundwindowinfo – log_rank.dart [foregroundwindowinfo]
+2022-07-02 04:14:08.265138|msedge.exe|(122) 라이브러리 오브 루이나 풀 - 업로드 (도시의 별 이전구간) - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-02 04:15:16.270274|studio64.exe|foregroundwindowinfo – main_page.dart [foregroundwindowinfo]
+2022-07-02 04:15:30.267884|크롬|새 탭 - Chrome
+2022-07-02 04:15:32.261390|studio64.exe|foregroundwindowinfo – main_page.dart [foregroundwindowinfo]
+2022-07-02 04:15:33.274061|크롬|새 탭 - Chrome
+2022-07-02 04:15:51.261072|studio64.exe|foregroundwindowinfo – main_page.dart [foregroundwindowinfo]
+2022-07-02 04:17:15.275032|크롬|새 탭 - Chrome
+2022-07-02 04:17:16.265708|studio64.exe|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-02 04:17:33.274651|크롬|새 탭 - Chrome
+2022-07-02 04:17:34.273512|studio64.exe|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-02 04:17:53.270692|크롬|새 탭 - Chrome
+2022-07-02 04:18:04.263171|studio64.exe|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-07-02 07:28:47.858913|크롬|flutter messagebox - Google 검색 - Chrome
+2022-07-02 07:28:49.257184|MouseWithoutBordersHelper.exe|
+2022-07-02 08:58:12.955378|크롬|TextFormField class - material library - Dart API - Chrome
+2022-07-02 10:26:53.152943|크롬??|Kotlin 스타일 가이드  |  Android 개발자  |  Android Developers - Chrome
+2022-07-02 10:34:36.634840|studio64.exe|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-02 10:34:37.543400|크롬|Kotlin 스타일 가이드  |  Android 개발자  |  Android Developers - Chrome
+2022-07-02 10:34:41.333181|MouseWithoutBordersHelper.exe|
+2022-07-04 16:48:51.633902|studio64.exe|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:30:07.913862|studio64.exe|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:30:10.411340|explorer.exe|Program Manager
+2022-07-04 19:31:30.784291|dddd|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:31:31.674778|크롬|[Dart] Collection : List & Set & Map - Chrome
+2022-07-04 19:31:39.575600|dddd|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:31:47.774028|explorer.exe|Program Manager
+2022-07-04 19:32:14.770146|studio64.exe|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:32:27.979808|크롬|[Dart] Collection : List & Set & Map - Chrome
+2022-07-04 19:32:28.470218|안드로이드 스튜디오|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:42:18.032563|explorer.exe|Program Manager
+2022-07-04 19:42:20.816315|SearchHost.exe|검색
+2022-07-04 19:42:25.320649|explorer.exe|
+2022-07-04 19:42:25.526652|notepad++.exe|Selected Tab
+2022-07-04 19:42:25.617653|explorer.exe|Program Manager
+2022-07-04 19:42:25.818651|notepad++.exe|새로운 1 - Notepad++
+2022-07-04 19:43:11.421250|안드로이드 스튜디오|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:44:46.526052|MouseWithoutBordersHelper.exe|
+2022-07-04 19:45:38.123309|안드로이드 스튜디오|foregroundwindowinfo – alias_page.dart [foregroundwindowinfo]
+2022-07-04 19:49:43.427862|msedge.exe|(160) 라이브러리 오브 루이나 풀 - 업로드 (불순물) - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-04 19:49:55.517483|안드로이드 스튜디오|foregroundwindowinfo – process_except_page.dart [foregroundwindowinfo]
+2022-07-06 23:24:08.929666|안드로이드 스튜디오|foregroundwindowinfo – process_except_page.dart [foregroundwindowinfo]
+2022-07-06 23:24:09.732937|explorer.exe|
+2022-07-06 23:24:10.925355|크롬|Google Keep - Chrome
+2022-07-06 23:24:40.929036|안드로이드 스튜디오|foregroundwindowinfo – process_except_page.dart [foregroundwindowinfo]
+2022-07-06 23:24:46.027139|크롬|Google Keep - Chrome
+2022-07-06 23:25:58.329970|안드로이드 스튜디오|foregroundwindowinfo – process_except_page.dart [foregroundwindowinfo]
+2022-07-06 23:26:13.023022|msedge.exe|(189) 모르면 손해 보는 Wi-Fi 속도! Wi-Fi라고 해서 다 똑같은 속도가 아니다? - YouTube - 개인 - Microsoft​ Edge
+2022-07-06 23:35:55.925146|MouseWithoutBordersHelper.exe|
+2022-07-06 23:35:56.019147|msedge.exe|(189) 모르면 손해 보는 Wi-Fi 속도! Wi-Fi라고 해서 다 똑같은 속도가 아니다? - YouTube - 개인 - Microsoft​ Edge
+2022-07-06 23:35:56.925136|MouseWithoutBordersHelper.exe|
+2022-07-06 23:35:57.125565|msedge.exe|(189) 모르면 손해 보는 Wi-Fi 속도! Wi-Fi라고 해서 다 똑같은 속도가 아니다? - YouTube - 개인 - Microsoft​ Edge
+2022-07-06 23:35:58.123070|MouseWithoutBordersHelper.exe|
+2022-07-06 23:36:02.434471|msedge.exe|(189) 모르면 손해 보는 Wi-Fi 속도! Wi-Fi라고 해서 다 똑같은 속도가 아니다? - YouTube - 개인 - Microsoft​ Edge
+2022-07-07 15:11:34.864337|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:12:19.520266|안드로이드 스튜디오|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-07 15:31:32.447436|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:33:23.817611||C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:33:39.876491|explorer.exe|Program Manager
+2022-07-07 15:33:40.782424|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:36:25.577430|안드로이드 스튜디오|foregroundwindowinfo – editor.dart [foregroundwindowinfo]
+2022-07-07 15:44:59.572388|크롬|Google 번역 - Chrome
+2022-07-07 15:46:30.171778|SearchHost.exe|검색
+2022-07-07 15:46:32.580765|ApplicationFrameHost.exe|설정
+2022-07-07 15:46:55.471122|explorer.exe|
+2022-07-07 15:47:04.672678|ApplicationFrameHost.exe|설정
+2022-07-07 15:47:14.877801|MouseWithoutBordersHelper.exe|
+2022-07-07 15:47:14.984804|ApplicationFrameHost.exe|설정
+2022-07-07 15:47:27.882380|크롬|음성으로 입력하기 - Google Docs 편집기 고객센터 - Chrome
+2022-07-07 15:47:52.171755|MouseWithoutBordersHelper.exe|
+2022-07-07 15:47:52.478755|크롬|제목 없는 문서 - Google Docs - Chrome
+2022-07-07 15:47:59.878469|explorer.exe|
+2022-07-07 15:48:03.669307|크롬|제목 없는 문서 - Google Docs - Chrome
+2022-07-07 15:48:04.973987|explorer.exe|
+2022-07-07 15:48:05.581421|크롬|Google Keep - Chrome
+2022-07-07 15:48:07.669806|MouseWithoutBordersHelper.exe|
+2022-07-07 15:48:07.975808|크롬|제목 없는 문서 - Google Docs - Chrome
+2022-07-07 15:48:10.769673|explorer.exe|
+2022-07-07 15:48:12.980687|안드로이드 스튜디오|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-07 15:49:46.677735|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:49:47.879633|explorer.exe|Program Manager
+2022-07-07 15:50:01.687975|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:52:51.560548|explorer.exe|Program Manager
+2022-07-07 15:52:55.351897|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:16.949365|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:18.258642|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:22.751832|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:24.360829|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:25.048866|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:25.847881|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:26.454021|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:26.953069|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:27.249677|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:27.750948|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:28.048669|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-07 15:53:28.546521|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
+2022-07-07 15:53:28.846901|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]

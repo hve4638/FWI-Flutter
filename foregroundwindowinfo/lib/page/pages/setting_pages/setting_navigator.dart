@@ -7,16 +7,10 @@ import 'package:wininfo/fwiconfig/alias_dic.dart';
 
 import './setting_sub_page.dart';
 
-class SettingNavigatorWidget extends StatefulWidget implements WinTracerWidget {
+class SettingNavigatorWidget extends StatefulWidget {
   const SettingNavigatorWidget({
     Key? key,
-    required this.onInitState,
-    required this.config,
-    required this.aliasDictionary,
   }) : super(key: key);
-  final FwiConfig config;
-  final Function onInitState;
-  final AliasDictionary aliasDictionary;
 
   static SettingNavigatorWidgetState? of(BuildContext context) {
     return context.findAncestorStateOfType<SettingNavigatorWidgetState>();
@@ -32,12 +26,7 @@ class SettingNavigatorWidget extends StatefulWidget implements WinTracerWidget {
   State<SettingNavigatorWidget> createState() => SettingNavigatorWidgetState();
 }
 
-class SettingNavigatorWidgetState extends State<SettingNavigatorWidget> implements WinTracer {
-  @override
-  onDisable() {}
-  @override
-  onEnable() {}
-
+class SettingNavigatorWidgetState<T extends SettingNavigatorWidget> extends State<T> {
   push<T extends Object?>(BuildContext context, SettingSubPage widget) {
     Navigator.of(context).push(
       FluentPageRoute(builder: (context) => widget as Widget),

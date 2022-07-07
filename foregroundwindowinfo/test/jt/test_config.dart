@@ -1,4 +1,4 @@
-import '../lib/fwiconfig/fwi_config.dart';
+import '../../lib/fwiconfig/fwi_config.dart';
 import 'package:test/test.dart';
 
 void main() {

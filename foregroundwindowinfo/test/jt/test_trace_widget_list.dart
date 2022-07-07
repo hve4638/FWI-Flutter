@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import '../lib/foregroundwindowinfo/log/log_list.dart';
-import '../lib/foregroundwindowinfo/foreground_window_info.dart';
+import '../../lib/foregroundwindowinfo/log/log_list.dart';
+import '../../lib/foregroundwindowinfo/foreground_window_info.dart';
 /*
 void main() {
   test('TraceWidgetList.toList', () { // 어떤 테스트를 할지 설명하고,안에 있는 테스트를 실행합니다.

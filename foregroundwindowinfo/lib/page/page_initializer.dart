@@ -17,7 +17,7 @@ class PageInitializer {
     required this.onToggle,
     required this.foregroundWindowTracer,
     required this.config,
-    required this.aliasDictionary
+    required this.aliasDictionary,
   }) {
     foregroundWindowInfo = foregroundWindowTracer.info();
   }

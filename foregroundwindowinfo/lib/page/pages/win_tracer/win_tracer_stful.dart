@@ -15,15 +15,17 @@ class WinTracerStatefulWidget extends StatefulWidget implements WinTracerWidget 
   State<WinTracerStatefulWidget> createState() => WinTracerState();
 }
 
-class WinTracerState<T extends WinTracerStatefulWidget> extends State<T> implements WinTracer {
+class WinTracerState<T extends WinTracerStatefulWidget> extends State<T> with Later implements WinTracer {
+  @override
   onEnable() {}
+  @override
   onDisable() {}
 
   @override
   void initState() {
     super.initState();
 
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    laterCall((timeStamp) {
       widget.onInitState(this);
     });
   }

@@ -6,21 +6,26 @@ import 'timer/intervalevent.dart';
 import 'page/pages/win_tracer/win_tracer.dart';
 import 'page/pages/win_tracer/win_tracer_stful.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
+import 'package:wininfo/fwiconfig/config_container.dart';
 import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
 class RootPage extends StatefulWidget {
   RootPage({
     Key? key,
     required this.config,
     required this.aliasDictionary,
+    required this.ignoreProcesses,
   }) : super(key: key) {
     tracer = ForegroundWindowTracer(
       config: config.readonly,
-      aliasDictionary: aliasDictionary
+      aliasDictionary: aliasDictionary,
+      ignoreProcesses: ignoreProcesses
     );
   }
   final FwiConfig config;
   final AliasDictionary aliasDictionary;
+  final IgnoreProcessSet ignoreProcesses;
   ForegroundWindowTracer? tracer;
 
   @override
@@ -31,7 +36,7 @@ class RootPageState extends State<RootPage> {
   final _pages = PageList();
   get _tracer => widget.tracer!;
   int _pageIndex = 0;
-  WinTracerState? _currentState;
+  WinTracer? _currentState;
   IntervalEvent? timer;
 
   @override
@@ -76,31 +81,36 @@ class RootPageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     return FluentApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        accentColor: Colors.blue,
-        iconTheme: const IconThemeData(size:24),
-      ),
-      home : NavigationView(
-        pane : NavigationPane(
-          selected: _pageIndex,
-          onChanged: (index) {
-            if (_pageIndex != index) {
-              disableCurrentPage();
-              setState(() {
-                _pageIndex = index;
-              });
-            }
-          },
-          displayMode: PaneDisplayMode.auto,
-          items : _pages.paneItems(),
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          accentColor: Colors.blue,
+          iconTheme: const IconThemeData(size:24),
         ),
-        content: NavigationBody(
-          index: _pageIndex,
-          children: _pages.widgets(),
-        ),
-      )
-    );
+        home : ConfigContainer(
+          config: widget.config.readonly,
+          ignoreProcesses: widget.ignoreProcesses,
+          aliases : widget.aliasDictionary,
+          child: NavigationView(
+            pane : NavigationPane(
+              selected: _pageIndex,
+              onChanged: (index) {
+                if (_pageIndex != index) {
+                  disableCurrentPage();
+                  setState(() {
+                    _pageIndex = index;
+                  });
+                }
+              },
+              displayMode: PaneDisplayMode.auto,
+              items : _pages.paneItems(),
+            ),
+            content: NavigationBody(
+              index: _pageIndex,
+              children: _pages.widgets(),
+            ),
+          ),
+        )
+      );
   }
 }
 

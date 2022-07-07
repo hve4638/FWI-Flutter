@@ -8,3 +8,9 @@ abstract class WinTracer {
 abstract class WinTracerWidget extends Widget {
   const WinTracerWidget({Key? key}) : super(key: key);
 }
+
+class Later {
+  laterCall(Function(dynamic) call) {
+    WidgetsBinding.instance?.addPostFrameCallback(call);
+  }
+}

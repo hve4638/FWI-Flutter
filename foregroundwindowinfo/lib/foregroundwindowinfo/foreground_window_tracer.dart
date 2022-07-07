@@ -7,14 +7,17 @@ import 'windowinfo/windowinfo.dart';
 import 'trace_logger.dart';
 import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
 import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
 class ForegroundWindowTracer {
   ForegroundWindowTracer({
     required this.config,
-    required this.aliasDictionary
+    required this.aliasDictionary,
+    required this.ignoreProcesses,
   });
   final FwiConfigReadonly config;
   final AliasDictionary aliasDictionary;
+  final IgnoreProcessSet ignoreProcesses;
   final _info = ForegroundWindowInfo();
   final logger = TraceLogger("test.txt");
   String _time = "00:00:00";
@@ -48,33 +51,39 @@ class ForegroundWindowTracer {
 
     _info.isRunning = true;
 
-    tracer.start(config.traceUpdateTime, () async {
-      var winfo = WindowInfoLazy();
-      var _isForeground = _appPointer == winfo.pointer;
-      var _isChanged = _info.actualName != winfo.name;
+    tracer.start(config.traceUpdateTime, _trace);
+  }
 
-      if (winfo.name == "unknown") {
+  _trace() async {
+    var wInfo = WindowInfoLazy();
 
-      } else if (!_isForeground) {
-        _info.set(
-          title: winfo.title,
-          name: winfo.name,
-          time: _time,
-          alias: aliasDictionary[winfo.name],
-          date: DateTime.now(),
-        );
+    if (_isIgnoreProcess(wInfo)) {
+      _info.setTime( time: _time );
+    } else {
+      _info.set(
+        title: wInfo.title,
+        name: wInfo.name,
+        time: _time,
+        alias: aliasDictionary[wInfo.name],
+        date: DateTime.now(),
+      );
 
-        if (_isChanged) {
-          _lastChanged = DateTime.now();
-          logger.add(_info);
-        }
+      var _isChanged = _info.actualName != wInfo.name;
+      if (_isChanged) {
+        _lastChanged = DateTime.now();
+        logger.add(_info);
       }
-      else {
-        _info.set( time: _time );
-      }
+    }
 
-      winfo.dispose();
-    });
+    wInfo.dispose();
+  }
+
+  _isIgnoreProcess(windowInfo) {
+    var _isUnknown = windowInfo.name == "unknown";
+    var _isForeground = _appPointer == windowInfo.pointer;
+    var _isIgnore = ignoreProcesses.contains(windowInfo.name);
+
+    return _isUnknown || _isForeground || _isIgnore;
   }
 
   stop() {

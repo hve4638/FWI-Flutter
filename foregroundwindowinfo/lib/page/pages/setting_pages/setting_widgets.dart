@@ -111,9 +111,9 @@ inputBox(String name, {
           ),
           Expanded(
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child : Text(name,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: globalFontSize,
                   ),
