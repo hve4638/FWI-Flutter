@@ -1,19 +1,26 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import 'package:wininfo/page/pages/setting_pages/process_page/process_widget.dart';
 import './message_box.dart';
 
-class IgnoreProcessBox extends StatefulWidget {
-  IgnoreProcessBox(String _name, {
+class IgnoreProcessBox extends StatefulWidget implements ProcessWidget {
+  String _name = "";
+  final bool noAliasFlag;
+  final TextEditingController controller;
+  final dynamic editor;
+
+  @override
+  get name => _name;
+  @override
+  get alias => "";
+
+  IgnoreProcessBox(String name, {
     Key? key,
     required this.controller,
     required this.editor,
     this.noAliasFlag = false,
   }) : super(key: key) {
-    name = _name;
+    _name = name;
   }
-  String name = "";
-  final bool noAliasFlag;
-  final TextEditingController controller;
-  final dynamic editor;
 
   @override
   State<IgnoreProcessBox> createState() => _IgnoreProcessBoxState();
@@ -64,7 +71,7 @@ class _IgnoreProcessBoxState extends State<IgnoreProcessBox> {
                 ),
                 onPressed: () {
                   if (widget.noAliasFlag) {
-                    widget.editor.addFromNoAliases(widget.name, update: false);
+                    widget.editor.addAtNoAliases(widget.name, update: false);
                   }
                   widget.editor.remove(widget.name);
                   widget.editor.save();

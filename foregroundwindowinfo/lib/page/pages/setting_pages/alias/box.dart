@@ -1,24 +1,33 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import './alias_info.dart';
-import './alias_message.dart';
+import './message_box.dart';
 import 'editor/editor.dart';
+import '../process_page/process_widget.dart';
 
-class AliasBox extends StatefulWidget {
-  const AliasBox({
-    Key? key,
-    required this.name,
-    required this.alias,
-    required this.editor,
-    required this.nameController,
-    required this.aliasController,
-    required this.noAliasFlag
-  }) : super(key: key);
-  final String name;
-  final String alias;
+class AliasBox extends StatefulWidget implements ProcessWidget {
+  String _name = "";
+  String _alias = "";
   final Editor editor;
   final TextEditingController nameController;
   final TextEditingController aliasController;
   final bool noAliasFlag;
+
+  @override
+  get name => _name;
+  @override
+  get alias => _alias;
+
+  AliasBox({
+    Key? key,
+    required String name,
+    required String alias,
+    required this.editor,
+    required this.nameController,
+    required this.aliasController,
+    required this.noAliasFlag
+  }) : super(key: key) {
+    _name = name;
+    _alias = alias;
+  }
 
   @override
   State<AliasBox> createState() => _AliasBoxState();

@@ -1,10 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:flutter/material.dart' as material;
-import './alias_info.dart';
 
 showAliasEditBox({
   required BuildContext context,
-  required Function(String processName, String alias) onSubmitted,
+  required void Function(String processName, String alias) onSubmitted,
   String name = "",
   String alias = "",
   TextEditingController? nameController,

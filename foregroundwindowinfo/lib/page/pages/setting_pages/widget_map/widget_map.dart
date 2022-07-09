@@ -1,9 +1,9 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
-class WidgetMap {
-  final Map<String, Widget> map = {};
+class WidgetMap<T extends Widget> {
+  final Map<String, T> map = {};
 
-  operator []=(String key, Widget value) {
+  operator []=(String key, T value) {
     add(key, value);
   }
 
@@ -11,7 +11,7 @@ class WidgetMap {
     return map[key];
   }
 
-  add(String name, Widget widget) {
+  add(String name, T widget) {
     map[name] = widget;
   }
 
@@ -19,11 +19,15 @@ class WidgetMap {
     map.remove(name);
   }
 
-  List<Widget> get widgets {
+  clear() {
+    map.clear();
+  }
+
+  List<T> get widgets {
     var keys = map.keys.toList();
     keys.sort();
 
-    var ls = <Widget>[];
+    var ls = <T>[];
     for(var key in keys) {
       ls.add(map[key]!);
     }

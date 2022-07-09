@@ -6,6 +6,7 @@ import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 import './setting_sub_page.dart';
 import './ignore_process/message_box.dart';
 import 'ignore_process/editor/ignore_process_editor.dart';
+import './process_page/process_page.dart';
 
 class IgnoreProcessPage extends StatefulWidget implements SettingSubPage {
   IgnoreProcessPage({
@@ -38,8 +39,6 @@ class IgnoreProcessPage extends StatefulWidget implements SettingSubPage {
 }
 
 class _IgnoreProcessPageState extends State<IgnoreProcessPage> {
-  var _ignoreProcessBoxes = <Widget>[];
-  bool _showNoAlias = false;
   IgnoreProcessEditor? editor;
 
   @override
@@ -49,30 +48,7 @@ class _IgnoreProcessPageState extends State<IgnoreProcessPage> {
       ignoreProcesses : widget.ignoreProcesses,
       noAliases : widget.noAliases,
       controller: widget.messageBoxNameController,
-      onChanged : (List<Widget> boxes, List<Widget> noAlias) {
-        List<Widget>? ignoreProcessBoxes;
-
-        if (_showNoAlias) {
-          ignoreProcessBoxes = [
-            ...noAlias,
-            Container(
-              padding : const EdgeInsets.all(5.0),
-              child : const Divider(
-                style: DividerThemeData(
-                  thickness: 1.0,
-                ),
-              ),
-            ),
-            ...boxes,
-          ];
-        } else {
-          ignoreProcessBoxes = [...boxes];
-        }
-
-        setState(() {
-          _ignoreProcessBoxes = ignoreProcessBoxes!;
-        });
-      },
+      onChanged : (List<Widget> boxes, List<Widget> noAlias) {},
     );
 
     editor?.update();
@@ -80,56 +56,19 @@ class _IgnoreProcessPageState extends State<IgnoreProcessPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-        children: [
-          Container(
-              height : 40,
-              margin : const EdgeInsets.fromLTRB(25, 5, 25, 5),
-              padding : const EdgeInsets.all(3),
-              child: Row(
-                  children: [
-                    Container(
-                        padding : const EdgeInsets.all(3),
-                        child: FilledButton(
-                            child : const Icon(FluentIcons.add),
-                            onPressed : () {
-                              showEditMessage(
-                                  context: context,
-                                  name: "",
-                                  onSubmitted: (name) {
-                                    editor?.add(name);
-                                    editor?.save();
-                                  }
-                              );
-                            }
-                        )
-                    ),
-                    Container(
-                      padding : const EdgeInsets.all(3),
-                      child: Checkbox(
-                          checked: _showNoAlias,
-                          onChanged: (value) {
-                            setState(() {
-                              _showNoAlias = value ?? false;
-                            });
-
-                            editor?.update();
-                          }
-                      )
-                    ),
-                  ]
-              )
-          ),
-          Expanded(
-            child : Container(
-              padding: const EdgeInsets.fromLTRB(25, 20, 25, 25),
-              //color: Colors.red,
-              child: ListView(
-                children: _ignoreProcessBoxes,
-              ),
-            ),
-          ),
-        ]
+    return ProcessListPage(
+      onAdd: () {
+        showEditMessage(
+            context: context,
+            name: "",
+            onSubmitted: (name) {
+              editor?.add(name);
+              editor?.save();
+            }
+        );
+      },
+      manager: editor!,
+      fixType: SearchType.name,
     );
   }
 }

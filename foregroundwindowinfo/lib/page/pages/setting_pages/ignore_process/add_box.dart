@@ -1,13 +1,22 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import '../process_page/process_widget.dart';
 
-class IgnoreProcessAddBox extends StatefulWidget {
-  const IgnoreProcessAddBox({
-    Key? key,
-    required this.name,
-    required this.editor,
-  }) : super(key: key);
-  final String name;
+class IgnoreProcessAddBox extends StatefulWidget implements ProcessWidget {
+  String _name = "";
   final dynamic editor;
+
+  IgnoreProcessAddBox({
+    Key? key,
+    required String name,
+    required this.editor,
+  }) : super(key: key) {
+    _name = name;
+  }
+
+  @override
+  get name => _name;
+  @override
+  get alias => "";
 
   @override
   State<IgnoreProcessAddBox> createState() => _IgnoreProcessAddBoxState();

@@ -1,14 +1,24 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/process_list_manager.dart';
+import 'package:wininfo/page/pages/setting_pages/process_page/process_widget.dart';
+import 'package:wininfo/page/pages/setting_pages/process_page/search_dropdown/search_dropdown_item.dart';
+import './process_filter.dart';
+import './search_enum.dart';
+import 'search_dropdown/search_dropdown.dart';
+
+export './process_filter.dart';
+export './search_enum.dart';
 
 class ProcessListPage extends StatefulWidget {
-  ProcessListPage({
+  const ProcessListPage({
     Key? key,
     required this.onAdd,
     required this.manager,
+    this.fixType,
   }) : super(key: key);
   final ProcessListManager manager;
   final void Function() onAdd;
+  final SearchType? fixType;
 
   @override
   State<ProcessListPage> createState() => _ProcessPageState();
@@ -16,7 +26,95 @@ class ProcessListPage extends StatefulWidget {
 
 class _ProcessPageState extends State<ProcessListPage> {
   bool _showNoAlias = false;
+  String _searchText = "";
+  SearchType _searchType = SearchType.name;
+  bool _regexSearch = false;
+  bool _matchCase = false;
+  final _searchWidgets = <Widget>[];
   var _processList = <Widget>[];
+
+  @override
+  initState() {
+    super.initState();
+
+    widget.manager.setOnChanged(update);
+    widget.manager.resetNoAliasList();
+    widget.manager.resetProcessList();
+    widget.manager.update();
+
+    _initSearchWidget();
+  }
+
+  _initSearchWidget() {
+    if (widget.fixType == null) {
+      _searchWidgets.add(const SizedBox( width : 20 ));
+      _searchWidgets.add(_makeDropdown());
+    } else {
+      _searchType = widget.fixType!;
+    }
+  }
+
+  Widget _makeDropdown() {
+    var searcher = SearchDropDown(
+      onChanged: (SearchType type) {
+        setState(() {
+          _searchType = type;
+        });
+        widget.manager.update(save: false);
+      },
+      items : [
+        SearchDropDownItem(
+          title: "프로세스명",
+          icon: FluentIcons.align_justify,
+          value: SearchType.name,
+        ),
+        SearchDropDownItem(
+          title: "별명",
+          icon: FluentIcons.favorite_star,
+          value: SearchType.alias,
+        ),
+      ]
+    );
+
+    return searcher;
+  }
+
+  update(List<ProcessWidget> aliases, List<ProcessWidget> noAliases) {
+    List<Widget>? ls;
+
+    if (_showNoAlias && noAliases.isNotEmpty) {
+      ls = [
+        ...search(noAliases),
+        divisionLine,
+        ...search(aliases),
+      ];
+    } else {
+      ls = [...search(aliases)];
+    }
+
+    setState(() {
+      _processList = ls!;
+    });
+  }
+
+  search(List<ProcessWidget> widgets) {
+    if (_searchText.isEmpty) {
+      return widgets;
+    } else {
+      var filter = ProcessFilter(
+        list : widgets,
+        search : _searchText,
+        searchMode: _regexSearch ? SearchMode.regex : SearchMode.plain,
+        type: _searchType,
+      );
+
+      var result = <Widget>[];
+      for(var w in filter) {
+        result.add(w);
+      }
+      return result;
+    }
+  }
 
   get divisionLine {
     return Container(
@@ -27,31 +125,6 @@ class _ProcessPageState extends State<ProcessListPage> {
         ),
       ),
     );
-  }
-
-  @override
-  initState() {
-    super.initState();
-
-    widget.manager.setOnChanged(update);
-  }
-
-  update(List<Widget> aliases, List<Widget> noAliases) {
-      List<Widget>? ls;
-
-      if (_showNoAlias && noAliases.isNotEmpty) {
-        ls = [
-          ...noAliases,
-          divisionLine,
-          ...aliases,
-        ];
-      } else {
-        ls = [...aliases];
-      }
-
-    setState(() {
-      _processList = ls!;
-    });
   }
 
   @override
@@ -85,7 +158,10 @@ class _ProcessPageState extends State<ProcessListPage> {
                               _showNoAlias = value;
                             });
 
-                            //widget.onChanged();
+                            if (value) {
+                              widget.manager.resetNoAliasList();
+                            }
+                            widget.manager.update();
                           },
                         )
                     ),
@@ -111,37 +187,49 @@ class _ProcessPageState extends State<ProcessListPage> {
                           width : 250,
                           child: TextBox(
                             onChanged: (text) {
-                              print("changed : $text");
+                              _searchText = text;
+                              widget.manager.update(save:false);
                             },
                             placeholder: "검색",
                             suffix : Container(
-                              padding: EdgeInsets.all(2),
+                              padding: const EdgeInsets.all(2),
                               child : const Icon(FluentIcons.search),
                             ),
                           ),
                         ),
                       ]
                   ),
-                  const SizedBox( width : 20 ),
-                  DropDownButton(
-                      title: const Text("검색 기준"),
-                      items: [
-                        DropDownButtonItem(
-                            title : const Text("프로세스명"),
-                            leading: const Icon(FluentIcons.align_justify),
-                            onTap: () {
-
-                            }
-                        ),
-                        DropDownButtonItem(
-                            title : const Text("별명"),
-                            leading: const Icon(FluentIcons.favorite_star),
-                            onTap: () {
-
-                            }
-                        ),
-                      ]
-                  )
+                  ..._searchWidgets,
+                  const SizedBox(width:10),
+                  ToggleButton(
+                    child: const Text("A",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    checked: _matchCase,
+                    onChanged: (value) {
+                      setState(() {
+                        _matchCase = value;
+                      });
+                      widget.manager.update(save: false);
+                    },
+                  ),
+                  const SizedBox(width:10),
+                  ToggleButton(
+                    child: const Text(".*",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    checked: _regexSearch,
+                    onChanged: (value) {
+                      setState(() {
+                        _regexSearch = value;
+                      });
+                      widget.manager.update(save: false);
+                    },
+                  ),
                 ],
               )
           ),

@@ -46,7 +46,6 @@ class AliasDictionary {
     var jsonString = jsonEncode(map);
 
     file.writeAsString(jsonString);
-    print("save...");
   }
 
   load() async {
