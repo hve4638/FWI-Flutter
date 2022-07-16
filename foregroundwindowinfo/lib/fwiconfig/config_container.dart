@@ -34,6 +34,10 @@ class ConfigContainer extends StatefulWidget {
     return ConfigContainer.of(context)?.ignoreProcesses;
   }
 
+  static AliasDictionary? aliases(BuildContext context) {
+    return ConfigContainer.of(context)?.aliases;
+  }
+
   static NoAliasDictionary? noAliases(BuildContext context) {
     return ConfigContainer.of(context)?.noAliases;
   }

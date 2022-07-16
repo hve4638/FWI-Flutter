@@ -1,9 +1,10 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
 
+import '/fwi/fwi.dart';
 import './win_tracer/win_tracer_stful.dart';
 import '/foregroundwindowinfo/foreground_window_info.dart';
-import '/timer/intervalevent.dart';
+import '/timer/interval_event.dart';
 
 import 'package:wininfo/fwiconfig/config_container.dart';
 
@@ -14,11 +15,9 @@ class TestPage extends WinTracerStatefulWidget {
     required onInitState,
     required this.foregroundWindowInfo,
     required this.onToggle,
-    required this.config
   }) : super(key: key, onInitState : onInitState);
-  final ForegroundWindowInfo foregroundWindowInfo;
+  final FWI foregroundWindowInfo;
   final Function onToggle;
-  final FwiConfigReadonly config;
 
   @override
   State<TestPage> createState() => _TestPageState();

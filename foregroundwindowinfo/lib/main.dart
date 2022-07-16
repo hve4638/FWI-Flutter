@@ -6,6 +6,8 @@ import 'package:wininfo/fwiconfig/alias_dic.dart';
 import 'package:wininfo/fwiconfig/fwi_config_manager.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
+import 'fwiconfig/global_config.dart';
+
 import 'root_page.dart';
 import 'docu_path.dart';
 
@@ -17,11 +19,12 @@ void main() async {
   await Directory(_path).create();
   setWindowFunctions();
 
-  runApp(RootPage(
-    config : await getFwiConfig(_path),
-    aliasDictionary : await getAliasDic(_path),
-    ignoreProcesses : await getIgnoreProcesses(_path)
-  ));
+  var config = GlobalConfig();
+  config.setAliasDictionary(await getAliasDic(_path));
+  config.setIgnoreProcess(await getIgnoreProcesses(_path));
+  config.setFwiConfig(await getFwiConfig(_path));
+
+  runApp(RootPage());
 }
 
 Future setWindowFunctions() async {
@@ -50,7 +53,6 @@ Future<AliasDictionary> getAliasDic(String directoryPath) async {
 Future<IgnoreProcessSet> getIgnoreProcesses(String directoryPath) async {
   var ignoreProcesses = IgnoreProcessSet("$directoryPath\\ignoreprocess");
   await ignoreProcesses.load();
-  //print("${ignoreProcesses.toList()}");
 
   return ignoreProcesses;
 }

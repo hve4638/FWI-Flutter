@@ -1,8 +1,13 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
+class ErrorMessage {
+  String name = "";
+  String alias = "";
+}
+
 showAliasEditBox({
   required BuildContext context,
-  required void Function(String processName, String alias) onSubmitted,
+  required bool Function(String, String, ErrorMessage) onSubmitted,
   String name = "",
   String alias = "",
   TextEditingController? nameController,
@@ -63,9 +68,9 @@ showAliasEditBox({
                         onPressed: () {
                           var _name = name;
                           var _alias = alias;
-                          if (_name != "") {
-                            print("submit? $_name $_alias");
-                            onSubmitted(name, alias);
+                          var _errorMessage = ErrorMessage();
+
+                          if (_name != "" && onSubmitted(name, alias, _errorMessage)) {
                             Navigator.of(context).pop();
                           }
                         },

@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../../lib/foregroundwindowinfo/log/log_list.dart';
+import '../../lib/foregroundwindowinfo/log/timeline_log.dart';
 import '../../lib/foregroundwindowinfo/foreground_window_info.dart';
 /*
 void main() {

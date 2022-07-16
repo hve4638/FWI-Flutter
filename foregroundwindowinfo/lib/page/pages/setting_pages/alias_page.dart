@@ -59,9 +59,10 @@ class _AliasPageState extends State<AliasPage> {
           showAliasEditBox(
               context: context,
               name: "",
-              onSubmitted: (name, alias) {
+              onSubmitted: (name, alias, errorMessage) {
                 editor?.add(name, alias);
                 editor?.save();
+                return true;
               }
           );
         },

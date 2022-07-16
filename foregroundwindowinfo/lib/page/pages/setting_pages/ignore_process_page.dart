@@ -4,9 +4,11 @@ import 'package:wininfo/fwiconfig/fwi_config.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
 import './setting_sub_page.dart';
-import './ignore_process/message_box.dart';
 import 'ignore_process/editor/ignore_process_editor.dart';
 import './process_page/process_page.dart';
+import './ignore_process/message/message.dart';
+
+import 'package:wininfo/fwiconfig/config_container.dart';
 
 class IgnoreProcessPage extends StatefulWidget implements SettingSubPage {
   IgnoreProcessPage({
@@ -60,10 +62,21 @@ class _IgnoreProcessPageState extends State<IgnoreProcessPage> {
       onAdd: () {
         showEditMessage(
             context: context,
-            name: "",
-            onSubmitted: (name) {
-              editor?.add(name);
-              editor?.save();
+            onSubmitted: (name, reject) {
+              var ignoreProcesses = ConfigContainer.ignoreProcesses(context)!;
+
+              if (name.isEmpty) {
+                reject.message = "이름을 입력해야 합니다";
+                return false;
+              } else if (ignoreProcesses.contains(name)) {
+                reject.message = "이미 존재하는 이름입니다";
+                return false;
+              } else {
+                editor?.add(name);
+                editor?.save();
+
+                return true;
+              }
             }
         );
       },
@@ -72,3 +85,12 @@ class _IgnoreProcessPageState extends State<IgnoreProcessPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+

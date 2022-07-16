@@ -53,7 +53,20 @@ class AliasDictionary {
 
     if (file.existsSync()) {
       var jsonString = await file.readAsString();
-      map = jsonDecode(jsonString);
+
+      var _map = _tryGetJsonDecode(jsonString);
+      if (_map != null) {
+        map = _map;
+      }
+    }
+  }
+
+  _tryGetJsonDecode(String jsonString) {
+    try {
+      return jsonDecode(jsonString);
+    }
+    on FormatException {
+      return null;
     }
   }
 

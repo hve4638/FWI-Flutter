@@ -3,7 +3,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
 import 'package:wininfo/foregroundwindowinfo/foreground_window_tracer.dart';
 import 'package:wininfo/foregroundwindowinfo/trace_logger.dart';
-import 'package:wininfo/timer/intervalevent.dart';
+import 'package:wininfo/timer/interval_event.dart';
 import 'win_tracer/win_tracer_stful.dart';
 
 class TimelinePage extends WinTracerStatefulWidget {
@@ -14,12 +14,12 @@ class TimelinePage extends WinTracerStatefulWidget {
     required this.onToggle,
     required this.config
   }) : super(key: key, onInitState : onInitState) {
-    logger = foregroundWindowTracer.logger;
+    getTimelineList = foregroundWindowTracer.getTimelineList;
   }
   final FwiConfigReadonly config;
   final ForegroundWindowTracer foregroundWindowTracer;
   final Function onToggle;
-  TraceLogger ?logger;
+  List<Widget> Function([int, int])? getTimelineList;
   double lastScrollPosition = 0;
   bool enableTrace = false;
 
@@ -34,16 +34,11 @@ class _TimelinePageState extends WinTracerState<TimelinePage> {
   List<Widget> itemList = [];
 
   updateList() {
-    var logger = widget.logger!;
+    var _list = widget.getTimelineList!();
 
-    if (logger.isListChanged(listChangeNumber)) {
-      listChangeNumber = logger.listChangeNumber;
-
-      var _list = widget.logger?.getList();
-      setState(() {
-        itemList = _list;
-      });
-    }
+    setState(() {
+      itemList = _list;
+    });
   }
 
   setTraceRealTime(value) {
@@ -75,54 +70,56 @@ class _TimelinePageState extends WinTracerState<TimelinePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Flexible(
-            flex: 20,
-            child : Container(
-              padding : const EdgeInsets.all(20.0),
-              color: Colors.blue,
-              child : Row(
-                children: [
-                  ToggleButton(
-                    child: const Text('실시간'),
-                    checked: widget.enableTrace,
-                    onChanged: setTraceRealTime,
-                  ),
-                  const SizedBox( width : 10, ),
-                  Button(
-                    onPressed: updateList,
-                    child : const Icon(FluentIcons.reset),
-                  ),
-                  const SizedBox( width : 10, ),
-                  Button(
-                    onPressed: () {
-                      widget.foregroundWindowTracer.testPush();
-                    },
-                    child : const Text("test"),
-                  ),
+    return Container(
+      child: Column(
+        children: [
+          Container(
+              height : 70,
+              //color : Colors.red,
+              padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  Text("타임라인",
+                    style: TextStyle(
+                      fontSize: 32.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
                 ],
-              ),
-            )
-        ),
-        Flexible(
-            flex: 75,
-            child : Container(
-              padding : const EdgeInsets.all(20.0),
-              child : ListView(
-                controller : _scrollController,
-                children: itemList,
-              ),
-            )
-        ),
-        Flexible(
-            flex: 5,
-            child : Container(
-              padding : const EdgeInsets.all(20.0),
-              color: Colors.blue,
-            )
-        ),
-      ],
+              )
+          ),
+          Container(
+            height: 70,
+            padding : const EdgeInsets.all(20.0),
+            child : Row(
+              children: [
+                Button(
+                  onPressed: updateList,
+                  child : const Icon(FluentIcons.reset),
+                ),
+
+                const SizedBox( width : 10, ),
+                ToggleButton(
+                  child: const Text('실시간'),
+                  checked: widget.enableTrace,
+                  onChanged: setTraceRealTime,
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+              child : Container(
+                padding : const EdgeInsets.all(20.0),
+                child : ListView(
+                  controller : _scrollController,
+                  children: itemList,
+                ),
+              )
+          ),
+          const SizedBox(height: 10),
+        ],
+      ),
     );
   }
 }

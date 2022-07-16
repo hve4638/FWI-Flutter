@@ -1,7 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import '../../foregroundwindowinfo/foreground_window_info.dart';
 import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
-import '/timer/intervalevent.dart';
+import '../../fwiconfig/global_config.dart';
+import '/timer/interval_event.dart';
 import 'win_tracer/win_tracer_stful.dart';
 
 class RunPage extends WinTracerStatefulWidget {
@@ -10,9 +11,8 @@ class RunPage extends WinTracerStatefulWidget {
     required onInitState,
     required this.foregroundWindowInfo,
     required this.onToggle,
-    required this.config,
   }) : super(key: key, onInitState : onInitState);
-  final FwiConfigReadonly config;
+
   final ForegroundWindowInfo foregroundWindowInfo;
   final Function onToggle;
 
@@ -21,6 +21,7 @@ class RunPage extends WinTracerStatefulWidget {
 }
 
 class RunPageState extends WinTracerState<RunPage> {
+  //final config = GlobalConfig();
   var info = ForegroundWindowInfo();
   var event = IntervalEvent();
   var buttonText = "Start";

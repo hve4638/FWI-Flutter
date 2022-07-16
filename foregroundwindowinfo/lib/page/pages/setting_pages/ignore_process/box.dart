@@ -1,6 +1,7 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/process_widget.dart';
-import './message_box.dart';
+import 'package:wininfo/fwiconfig/config_container.dart';
+import './message/message.dart';
 
 class IgnoreProcessBox extends StatefulWidget implements ProcessWidget {
   String _name = "";
@@ -51,13 +52,24 @@ class _IgnoreProcessBoxState extends State<IgnoreProcessBox> {
                 onPressed: () {
                   showEditMessage(
                     context: context,
-                    title : "수정",
                     name: widget.name,
                     controller: widget.controller,
-                    onSubmitted: (name) {
-                      setState(() {
-                        widget.editor.move(widget.name, name);
-                      });
+                    onSubmitted: (name, reject) {
+                      var ignoreProcesses = ConfigContainer.ignoreProcesses(context)!;
+
+                      if (name.isEmpty) {
+                        reject.message = "이름을 입력해야 합니다";
+                        return false;
+                      } else if (name != widget.name && ignoreProcesses.contains(name)) {
+                        reject.message = "이미 존재하는 이름입니다";
+                        return false;
+                      } else {
+                        setState(() {
+                          widget.editor.add(name);
+                          widget.editor.save();
+                        });
+                        return true;
+                      }
                     },
                   );
                 },

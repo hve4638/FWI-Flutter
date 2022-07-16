@@ -1,7 +1,10 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import './message_box.dart';
-import 'editor/editor.dart';
+
+import 'package:wininfo/fwiconfig/config_container.dart';
+
 import '../process_page/process_widget.dart';
+import './editor/editor.dart';
+import './message/message.dart';
 
 class AliasBox extends StatefulWidget implements ProcessWidget {
   String _name = "";
@@ -62,17 +65,34 @@ class _AliasBoxState extends State<AliasBox> {
                   size: 18,
                 ),
                 onPressed: () {
-                  showEditMessageBox(
+                  showEditMessage(
                     name: widget.name,
                     alias: widget.alias,
                     context: context,
                     nameController: widget.nameController,
                     aliasController: widget.aliasController,
-                    onSubmitted: (name, alias) {
-                      widget.editor.move(widget.name, name, update: false);
-                      widget.editor.replace(name, alias, update: false);
-                      widget.editor.update();
-                    },
+                    onSubmitted: (name, alias, rejectMessage) {
+                      var aliases = ConfigContainer.aliases(context)!;
+
+                      if (name.isEmpty) {
+                        rejectMessage.message = "이름을 입력해야 합니다";
+                        rejectMessage.position = RejectPosition.name;
+                        return false;
+                      } else if (name != widget.name && aliases[name] != null) {
+                        rejectMessage.message = "이미 존재하는 이름입니다";
+                        rejectMessage.position = RejectPosition.name;
+                        return false;
+                      } else if (alias.isEmpty) {
+                        rejectMessage.message = "별명을 입력해야 합니다";
+                        rejectMessage.position = RejectPosition.alias;
+                        return false;
+                      } else {
+                        widget.editor.move(widget.name, name, update: false);
+                        widget.editor.replace(name, alias, update: false);
+                        widget.editor.update();
+                        return true;
+                      }
+                    }
                   );
                 },
               ),
@@ -84,11 +104,12 @@ class _AliasBoxState extends State<AliasBox> {
                   size: 18,
                 ),
                 onPressed: () {
-                  showCheckBox(
+                  showDeleteMessage(
                     context: context,
                     onSubmitted: () {
                       widget.editor.remove(name);
-                    },
+                      return true;
+                    }
                   );
                 },
               ),
@@ -97,40 +118,4 @@ class _AliasBoxState extends State<AliasBox> {
       ),
     );
   }
-}
-
-showAddMessageBox({
-  required BuildContext context,
-  Function(String, String)? onSubmitted,
-  TextEditingController? nameController,
-  TextEditingController? aliasController,
-}) {
-  var submit = onSubmitted ?? (name, alias) => null;
-
-  showAliasEditBox(
-    context: context,
-    onSubmitted: submit,
-    nameController: nameController,
-    aliasController: aliasController
-  );
-}
-
-showEditMessageBox({
-  required BuildContext context,
-  required String name,
-  String alias = "",
-  Function(String, String)? onSubmitted,
-  TextEditingController? nameController,
-  TextEditingController? aliasController,
-}) {
-  var submit = onSubmitted ?? (name, alias) => null;
-
-  showAliasEditBox(
-    name : name,
-    alias : alias,
-    context: context,
-    onSubmitted: submit,
-    nameController: nameController,
-    aliasController: aliasController
-  );
 }

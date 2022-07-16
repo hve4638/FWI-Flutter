@@ -1,4 +1,6 @@
-class ForegroundWindowInfo {
+import './fwi.dart';
+
+class ForegroundWindowInfo implements FWI {
   bool isRunning = false;
   String _title = "Unknown";
   String _name = "Unknown";
@@ -6,12 +8,20 @@ class ForegroundWindowInfo {
   String _path = "Unknown";
   String _time = "00:00:00";
   DateTime _date = DateTime.now();
+
+  @override
   get title => _title;
+  @override
   get name => _alias ?? _name;
+  @override
   get path => _path;
+  @override
   get time => _time;
+  @override
   get date => _date;
+  @override
   get actualName => _name;
+  @override
   get alias => _alias ?? "unknown";
 
   void set({
@@ -19,10 +29,12 @@ class ForegroundWindowInfo {
     String ?name,
     String ?alias,
     String ?time,
+    String ?path,
     DateTime ?date,
   }) {
     if (title != null) _title = title;
     if (name != null) _name = name;
+    if (path != null) _path = path;
     if (date != null) _date = date;
     if (time != null) _time = time;
 
@@ -35,17 +47,19 @@ class ForegroundWindowInfo {
     _time = time;
   }
 
-  void copy(ForegroundWindowInfo source) {
-    isRunning = source.isRunning;
-    _title = source.title;
-    _name = source.name;
-    _path = source.path;
-    _time = source.time;
+  set title(String title) {
+    _title = title;
   }
 
-  //get isRunning => _isRunning;
-  //get title => _title;
-  //get name => _name;
-  //get path => _path;
-  //get time => _time;
+  void copy(ForegroundWindowInfo source) {
+    isRunning = source.isRunning;
+    set(
+      title: source.title,
+      name: source.actualName,
+      time: source.time,
+      date: source.date,
+      alias: source.alias,
+      path: source.path,
+    );
+  }
 }

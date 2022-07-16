@@ -4,7 +4,7 @@ class TimerEvent {
   Timer? timer;
   bool _isRunning = false;
   int _interval = 1000;
-  Map _currentTime = {
+  final Map _currentTime = {
     "hour" : 0,
     "min" : 0,
     "sec" : 0,
@@ -57,7 +57,7 @@ class TimerEvent {
     return Map.unmodifiable(_currentTime);
   }
 
-  String getTime() {
+  String getTimeFormat() {
     var _hour = _timeToString(_currentTime["hour"]);
     var _min = _timeToString(_currentTime["min"]);
     var _sec = _timeToString(_currentTime["sec"]);
@@ -71,5 +71,10 @@ class TimerEvent {
 
   bool isRunning() {
     return _isRunning;
+  }
+
+  @Deprecated("use getTimeFormat")
+  String getTime() {
+    return getTimeFormat();
   }
 }

@@ -1,7 +1,9 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import '../process_page/process_widget.dart';
 import './message_box.dart';
-import 'editor/editor.dart';
+import './editor/editor.dart';
+
+import './message/message.dart';
 
 class AliasAddBox extends StatefulWidget implements ProcessWidget {
   String _name = "";
@@ -51,14 +53,22 @@ class _AliasBoxState extends State<AliasAddBox> {
                   size: 18,
                 ),
                 onPressed: () {
-                  _showAddMessageBox(
-                    onSubmitted: (name, alias) {
-                      widget.editor.add(name, alias);
-                    },
+                  showEditMessage(
                     name : widget.name,
                     context: context,
                     nameController: widget.nameController,
                     aliasController: widget.aliasController,
+                    nameReadonly: true,
+                    onSubmitted: (name, alias, reject) {
+                      if (alias.isEmpty) {
+                        reject.message = "별명을 입력해야 합니다";
+                        reject.position = RejectPosition.alias;
+                        return false;
+                      } else {
+                        widget.editor.add(name, alias);
+                        return true;
+                      }
+                    },
                   );
                 },
               ),
@@ -67,23 +77,4 @@ class _AliasBoxState extends State<AliasAddBox> {
       ),
     );
   }
-}
-
-_showAddMessageBox({
-  required BuildContext context,
-  required String name,
-  Function(String, String)? onSubmitted,
-  TextEditingController? nameController,
-  TextEditingController? aliasController,
-}) {
-  var submit = onSubmitted ?? (name, alias) => null;
-
-  showAliasEditBox(
-    context: context,
-    name: name,
-    onSubmitted: submit,
-    nameController: nameController,
-    aliasController: aliasController,
-    nameReadonly: true,
-  );
 }

@@ -1604,3 +1604,382 @@
 2022-07-07 15:53:28.048669|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
 2022-07-07 15:53:28.546521|notepad++.exe|C:\Users\hve46\Documents\Foregroundwindowinfo\ignoreprocess - Notepad++
 2022-07-07 15:53:28.846901|안드로이드 스튜디오|foregroundwindowinfo – ignore_process_page.dart [foregroundwindowinfo]
+2022-07-12 03:41:00.267996|Count: 7963|test
+2022-07-13 18:42:36.929095|Count: 8044|test
+2022-07-13 18:49:28.776324|Count: 8094|test
+2022-07-13 18:58:21.350758|Count: 8091|test
+2022-07-13 19:04:03.492717|Edge|(5) 김도 - Twitch - 개인 - Microsoft​ Edge
+2022-07-13 19:04:13.697667|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-13 19:04:27.789054|Edge|새 탭 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:04:36.088725|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-13 19:04:58.057433|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-13 19:06:52.651269|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:07:33.846957|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:07:51.056614|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:08:44.558988|Android Studio|foregroundwindowinfo – setting_page.dart [foregroundwindowinfo]
+2022-07-13 19:11:26.950974|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:12:33.248551|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:12.572561|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:12.978902|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:28:14.282899|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:18.372985|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:28:18.871876|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:19.579520|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:28:20.179015|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:21.273116|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:28:21.785393|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:28:22.584118|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:28:49.672805|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:29:49.080428|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-13 19:29:50.478600|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:30:49.974357|Chrome|Google Keep - Chrome
+2022-07-13 19:30:52.885112|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:31:56.582564|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:32:31.479311|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:33:31.476690|Chrome|Google Keep - Chrome
+2022-07-13 19:34:18.085081|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:36:02.674380|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:36:11.171842|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:36:42.781678|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:36:56.918314|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:38:39.277764|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:38:46.182196|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:41:08.271992|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:42:09.974713|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:42:55.079912|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:44:59.576368|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:45:47.671188|Edge|(5) 김도 - Twitch 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-13 19:46:17.185116|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:46:20.376458|Edge|(5) 김도 - Twitch 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-13 19:46:22.182511|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:46:59.803807|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:47:01.603574|Chrome|Google Keep - Chrome
+2022-07-13 19:47:02.102084|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:47:02.400106|Chrome|Google Keep - Chrome
+2022-07-13 19:47:13.901536|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:48:27.896946|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:48:32.904225|Chrome|Google Keep - Chrome
+2022-07-13 19:49:32.592513|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:50:23.296651|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-13 19:51:48.495430|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:52:21.294279|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:52:23.398291|Chrome|Google Keep - Chrome
+2022-07-13 19:52:32.890499|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:54:44.401977|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:55:51.297584|Chrome|Flutter - Row,Column정렬하기 (MainAxisAlignment, CrossAxisAlignment) - Chrome
+2022-07-13 19:56:20.006079|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:56:20.491261|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:56:54.596674|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:57:09.793065|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 19:57:34.503473|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:57:42.502963|Chrome|Google Keep - Chrome
+2022-07-13 19:57:48.896523|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:57:50.993265|Chrome|Google Keep - Chrome
+2022-07-13 19:58:38.704946|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:58:41.704560|Chrome|Google Keep - Chrome
+2022-07-13 19:59:53.092929|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 19:59:59.503501|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 20:00:13.495702|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-13 20:00:40.900174|Edge|(5) 김도 - Twitch 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-13 20:01:26.601607|Android Studio|foregroundwindowinfo – box.dart [foregroundwindowinfo]
+2022-07-15 18:58:30.548543|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:33.754610|SearchHost.exe|검색
+2022-07-15 18:58:36.047581|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:41.140262|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:41.543880|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:42.043064|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:42.349184|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:43.951207|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:44.243943|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:44.738938|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:45.147484|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:45.647730|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 18:58:46.036998|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:58:51.751405|Chrome|새 탭 - Chrome
+2022-07-15 18:59:02.941862|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 18:59:05.144949|Chrome|Google Keep - Chrome
+2022-07-15 19:00:17.339360|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 19:00:33.241389|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:00:33.938412|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 19:00:34.950017|Chrome|Google Keep - Chrome
+2022-07-15 19:02:05.637722|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 19:09:29.647485|Edge|(300) 번지점프 하고 왔습니다.. [가평 캠핑#1] - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 19:09:31.351148|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:10:29.846507|Edge|(300) 가평 힐링 캠핑 그리고 몰래온 손님 [가평 캠핑#2] - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 19:11:03.448369|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 19:11:52.644367|Edge|(300) 가평 힐링 캠핑 그리고 몰래온 손님 [가평 캠핑#2] - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:12:01.243038|Chrome|Google Keep - Chrome
+2022-07-15 19:12:14.640035|Edge|(300) 가평 힐링 캠핑 그리고 몰래온 손님 [가평 캠핑#2] - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:12:16.045886|Android Studio|foregroundwindowinfo – timeline.dart [foregroundwindowinfo]
+2022-07-15 19:18:29.948891|Edge|(300) 가평 힐링 캠핑 그리고 몰래온 손님 [가평 캠핑#2] - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:19:58.551294|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:22:08.451375|Edge|(300) 가평 힐링 캠핑 그리고 몰래온 손님 [가평 캠핑#2] - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:23:02.545299|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:26:07.178181|Chrome|Google Keep - Chrome
+2022-07-15 19:26:07.397868|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:26:08.092385|Chrome|Google Keep - Chrome
+2022-07-15 19:26:08.388563|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:43:31.133722|Chrome|Google Keep - Chrome
+2022-07-15 19:43:31.734321|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:43:32.330250|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:43:40.130140|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:45:54.693439|Chrome|Google Keep - Chrome
+2022-07-15 19:45:54.992458|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:45:56.002012|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:45:56.503713|Chrome|Google Keep - Chrome
+2022-07-15 19:45:57.699044|notepad++|다시 읽기
+2022-07-15 19:45:58.698416|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:45:59.089901|Chrome|Google Keep - Chrome
+2022-07-15 19:45:59.200805|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:46:01.292467|Chrome|Google 번역 - Chrome
+2022-07-15 19:46:10.800769|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:46:14.899160|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:46:15.398715|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:46:25.091310|Edge|(302) 연령대별 해야할 일 - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:46:25.497291|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 19:50:38.395013|Edge|(302) 연령대별 해야할 일 - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 19:50:44.897570|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:52:26.391979|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:52:26.893985|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 19:58:14.691726|Chrome|Google Keep - Chrome
+2022-07-15 19:58:15.384106|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:58:15.979063|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-15 19:58:16.476354|Chrome|Google Keep - Chrome
+2022-07-15 19:58:17.079971|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 19:58:17.578503|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-15 20:01:10.285266|Edge|(302) 연령대별 해야할 일 - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 20:01:26.483485|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 20:01:37.888601|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 20:01:40.889936|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 20:10:01.799925|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 20:10:13.100586|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:11:03.523392|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:11:04.434713|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 20:11:04.829168|Chrome|Google Keep - Chrome
+2022-07-15 20:11:05.129832|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:11:33.444901|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:19:38.489928|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 20:22:19.109614|Chrome|Google Keep - Chrome
+2022-07-15 20:22:20.116402|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:22:21.404517|Chrome|Google Keep - Chrome
+2022-07-15 20:22:23.201103|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 20:22:29.735218|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:22:31.844819|Chrome|Google Keep - Chrome
+2022-07-15 20:22:36.943793|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:26:41.037551|Edge|(302) 다수처럼 보이는 소수 - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 20:26:43.136660|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:26:49.635460|Chrome|Google Keep - Chrome
+2022-07-15 20:26:52.146878|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:31:31.133205|Chrome|Google Keep - Chrome
+2022-07-15 20:31:37.635859|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:34:55.937423|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 2개 - 개인 - Microsoft​ Edge
+2022-07-15 20:38:37.248352|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:40:49.237153|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 20:40:51.334546|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:41:02.239595|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 20:41:04.972475|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:41:07.033337|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 20:41:07.349425|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:41:23.337278|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 20:41:24.235304|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:43:15.641718|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 20:44:11.738602|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:58:23.862758|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:58:24.362034|Chrome|Google Keep - Chrome
+2022-07-15 20:58:24.765586|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:58:25.066593|Chrome|Google Keep - Chrome
+2022-07-15 20:58:25.460610|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 20:58:25.762165|Chrome|Google Keep - Chrome
+2022-07-15 20:58:26.658169|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:00:12.716247|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:00:13.108413|Chrome|Google Keep - Chrome
+2022-07-15 21:00:13.517426|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:00:13.912150|Chrome|Google Keep - Chrome
+2022-07-15 21:00:14.816701|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:00:15.114873|Chrome|Google Keep - Chrome
+2022-07-15 21:00:21.013521|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 21:00:21.313888|Chrome|Google Keep - Chrome
+2022-07-15 21:00:22.214774|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:05:54.923963|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 21:05:55.717937|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:05:58.815186|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 21:05:59.920325|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:07:02.487975|Chrome|Google Keep - Chrome
+2022-07-15 21:07:02.895384|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:07:05.294552|Chrome|Google Keep - Chrome
+2022-07-15 21:07:05.782858|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:07:07.184818|Chrome|Google Keep - Chrome
+2022-07-15 21:07:07.594449|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:07:31.564788|Chrome|Google Keep - Chrome
+2022-07-15 21:07:32.161614|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:07:33.666156|Chrome|Google Keep - Chrome
+2022-07-15 21:07:35.459213|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:08:32.554832|Edge|(303) 좋은 프로그래밍 언어와 기본동작 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 21:08:34.658568|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:08:37.662046|Chrome|Google Keep - Chrome
+2022-07-15 21:08:38.557930|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 21:15:22.758177|Edge|(303) 가상/증강 현실의 미래 - YouTube 외 페이지 3개 - 개인 - Microsoft​ Edge
+2022-07-15 21:47:05.877012|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:32.175409|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:32.880763|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:35.883165|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:39.287972|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:39.474706|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:39.772650|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:39.976323|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:40.180024|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:40.385533|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:40.686397|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:40.874537|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:41.075510|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:00:41.481157|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:00:45.487788|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:01:25.533830|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:01:26.130154|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:01:49.736717|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:02:45.438935|Edge|(303) 미국의 비극들이 게임으로 짬처리 된 과정 [미국판 게임질병화 사건] - YouTube 외 페이지 6개 - 개인 - Microsoft​ Edge
+2022-07-15 22:02:48.038172|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 22:03:17.545122|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:03:19.034285|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:03:21.144872|Chrome|Google Keep - Chrome
+2022-07-15 22:03:21.944471|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:03:35.243032|Chrome|Google Keep - Chrome
+2022-07-15 22:03:36.038500|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-15 22:04:27.957841|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 22:04:30.549941|Chrome|Google Keep - Chrome
+2022-07-15 22:04:31.244106|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 22:04:32.646905|Chrome|Google Keep - Chrome
+2022-07-15 22:04:33.053055|Android Studio|foregroundwindowinfo – trace_logger.dart [foregroundwindowinfo]
+2022-07-15 22:05:28.569884|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:05:39.097768|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:05:54.031006|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:05:55.425901|Chrome|Google Keep - Chrome
+2022-07-15 22:05:57.920014|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:05:59.929523|Chrome|Google Keep - Chrome
+2022-07-15 22:06:01.116126|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:06:09.827081|Chrome|Google Keep - Chrome
+2022-07-15 22:06:30.527342|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:06:43.631004|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:06:52.517571|Edge|(303) 미국의 비극들이 게임으로 짬처리 된 과정 [미국판 게임질병화 사건] - YouTube 외 페이지 6개 - 개인 - Microsoft​ Edge
+2022-07-15 22:13:03.117429|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:13:12.126051|Chrome|flutter DateTime사용법 :: 마느아의 전산 공부 블로그 - Chrome
+2022-07-15 22:13:21.818930|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:14:19.329749|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:15:07.219373|Chrome|Google Keep - Chrome
+2022-07-15 22:15:18.622729|Edge|(303) 미국의 비극들이 게임으로 짬처리 된 과정 [미국판 게임질병화 사건] - YouTube 외 페이지 6개 - 개인 - Microsoft​ Edge
+2022-07-15 22:15:20.330648|Chrome|Google Keep - Chrome
+2022-07-15 22:22:47.429131|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:23:01.019667|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:23:15.865530|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:23:51.363509|Chrome|Google Keep - Chrome
+2022-07-15 22:24:24.069578|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:24:37.972471|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:24:41.375464|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:24:57.974215|Chrome|Google Keep - Chrome
+2022-07-15 22:24:58.664999|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:25:06.568935|Chrome|Google Keep - Chrome
+2022-07-15 22:25:26.664301|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:32:42.032355|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:33:17.239573|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:33:59.036977|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:35:04.513330|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:35:47.603938|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:36:13.602332|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:36:15.016637|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:36:16.116772|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:42:45.463729|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:43:19.552801|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:44:17.757250|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:44:32.750439|Chrome|Google Keep - Chrome
+2022-07-15 22:44:34.161168|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:44:57.460935|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:45:27.758869|Chrome|Google Keep - Chrome
+2022-07-15 22:45:30.752265|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-15 22:46:05.764253|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-15 22:55:33.057169|Chrome|Google Keep - Chrome
+2022-07-16 13:37:53.479378|Chrome|flutter closure - Google 검색 - Chrome
+2022-07-16 13:37:53.971771|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-16 13:37:54.565152|Chrome|Google Keep - Chrome
+2022-07-16 13:37:55.161740|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-16 13:37:55.459821|Chrome|flutter closure - Google 검색 - Chrome
+2022-07-16 13:38:08.071374|notepad++|새로운 1 - Notepad++
+2022-07-16 13:38:16.665203|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-16 13:39:16.471123|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 13:39:18.171257|Chrome|Google Keep - Chrome
+2022-07-16 13:39:18.773791|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 13:40:02.965159|Android Studio|foregroundwindowinfo – timeline_page.dart [foregroundwindowinfo]
+2022-07-16 13:42:10.662673|Edge|(3) 인도란... 어떤 곳일까? - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:42:20.672801|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 13:42:23.062502|Edge|(3) YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:42:23.772639|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 13:42:53.668922|Edge|(3) help - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:43:29.373420|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 13:43:51.769223|Edge|(3) 드디어 라이젠 뚝배기 날아가나? 인텔 좀 치네?! - YouTube - 개인 - Microsoft​ Edge
+2022-07-16 13:43:52.674774|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-16 13:47:31.164413|Edge|(3) 드디어 라이젠 뚝배기 날아가나? 인텔 좀 치네?! - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:47:32.860374|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-16 13:47:37.564030|Edge|(3) 드디어 라이젠 뚝배기 날아가나? 인텔 좀 치네?! - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:47:39.472579|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-16 13:47:40.173927|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 13:47:41.570739|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-16 13:49:51.871126|Edge|새 탭 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 13:50:15.068206|Android Studio|foregroundwindowinfo – timerevent.dart [foregroundwindowinfo]
+2022-07-16 13:50:18.273301|Chrome|Google Keep - Chrome
+2022-07-16 13:50:20.760927|Android Studio|foregroundwindowinfo – timerevent.dart [foregroundwindowinfo]
+2022-07-16 13:50:57.965704|Edge|(3) 드디어 라이젠 뚝배기 날아가나? 인텔 좀 치네?! - YouTube - 개인 - Microsoft​ Edge
+2022-07-16 14:42:52.097958|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:43:43.488919|Chrome|Google Keep - Chrome
+2022-07-16 14:43:49.888663|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:43:50.293672|Chrome|Google Keep - Chrome
+2022-07-16 14:44:04.487855|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:45:25.666877|Chrome|Google Keep - Chrome
+2022-07-16 14:45:26.166145|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:45:28.961350|Chrome|Google Keep - Chrome
+2022-07-16 14:45:59.063108|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:49:16.287223|Chrome|Google Keep - Chrome
+2022-07-16 14:49:19.289690|Edge|새 탭 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 14:49:20.782754|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:49:22.482650|Edge|새 탭 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 14:49:23.777740|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:49:27.389213|Chrome|Google Keep - Chrome
+2022-07-16 14:49:38.080566|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 14:49:57.082203|Chrome|Google Keep - Chrome
+2022-07-16 14:50:13.188195|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:53:15.702560|Chrome|Google Keep - Chrome
+2022-07-16 14:53:18.803867|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 14:54:30.007257|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 14:56:44.803087|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 14:57:10.402111|Android Studio|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-07-16 15:04:55.056380|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 15:05:09.755881|notepad++|다시 읽기
+2022-07-16 15:05:26.359345|Chrome|Google Keep - Chrome
+2022-07-16 15:05:45.349313|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 15:05:51.852467|Chrome|Google Keep - Chrome
+2022-07-16 15:06:42.657772|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 15:06:45.347076|Chrome|Google Keep - Chrome
+2022-07-16 15:06:47.755785|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 15:07:56.657387|Edge|(3) 허준이 교수 필즈상 수상과 슈카의 숟가락 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 15:08:00.050730|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-16 15:21:10.220424|Chrome|Google Keep - Chrome
+2022-07-16 15:21:40.909380|Android Studio|foregroundwindowinfo – global_config.dart [foregroundwindowinfo]
+2022-07-16 15:23:59.815264|Edge|(3) 사람이 점점 미쳐가는 셀레스트 하드 모드 요약본! - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 15:24:00.620773|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:24:27.820333|Chrome|Google - Chrome
+2022-07-16 15:24:44.911454|Edge|(3) 전 실리콘밸리 기술이사가 말하는 회사 지분 vs 봉급 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 15:24:46.314808|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:28:06.328356|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:33:46.879170|Android Studio|foregroundwindowinfo – max_time_event.dart [foregroundwindowinfo]
+2022-07-16 15:33:55.982880|Chrome|Google Keep - Chrome
+2022-07-16 15:34:02.382151|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:34:52.122956|Chrome|Google Keep - Chrome
+2022-07-16 15:35:00.921307|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:35:21.911570|Chrome|Google Keep - Chrome
+2022-07-16 15:35:34.913549|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:36:34.425431|Edge|(3) 전 실리콘밸리 기술이사가 말하는 회사 지분 vs 봉급 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 15:36:34.910294|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:39:48.760507|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:40:45.784915|Chrome|Google Keep - Chrome
+2022-07-16 15:40:52.588446|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 15:41:04.881760|Chrome|Google Keep - Chrome
+2022-07-16 15:41:12.284736|Edge|(3) 꺄하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-16 15:41:20.987885|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]

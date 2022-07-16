@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import '../../foregroundwindowinfo/foreground_window_info.dart';
-import '/timer/intervalevent.dart';
+import '/timer/interval_event.dart';
 import 'win_tracer/win_tracer_stful.dart';
 
 class EmptyPage extends WinTracerStatefulWidget {

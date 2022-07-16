@@ -1,10 +1,4 @@
 import 'package:fluent_ui/fluent_ui.dart';
-
-import 'package:wininfo/page/navigate_page/navigate_page.dart';
-import 'package:wininfo/page/pages/win_tracer/win_tracer.dart';
-import 'package:wininfo/fwiconfig/fwi_config.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
-
 import './setting_sub_page.dart';
 
 class SettingNavigatorWidget extends StatefulWidget {

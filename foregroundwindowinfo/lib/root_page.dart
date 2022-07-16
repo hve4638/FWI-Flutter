@@ -1,8 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'foregroundwindowinfo/foreground_window_tracer.dart';
+import 'fwi/foreground_window_tracer.dart';
 import 'page/page_initializer.dart';
 import 'page/page_list.dart';
-import 'timer/intervalevent.dart';
+import 'timer/interval_event.dart';
 import 'page/pages/win_tracer/win_tracer.dart';
 import 'page/pages/win_tracer/win_tracer_stful.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
@@ -10,22 +10,15 @@ import 'package:wininfo/fwiconfig/config_container.dart';
 import 'package:wininfo/fwiconfig/alias_dic.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
+import 'fwiconfig/global_config.dart';
+
 class RootPage extends StatefulWidget {
   RootPage({
-    Key? key,
-    required this.config,
-    required this.aliasDictionary,
-    required this.ignoreProcesses,
+    Key? key
   }) : super(key: key) {
-    tracer = ForegroundWindowTracer(
-      config: config.readonly,
-      aliasDictionary: aliasDictionary,
-      ignoreProcesses: ignoreProcesses
-    );
+    tracer = ForegroundWindowTracer();
   }
-  final FwiConfig config;
-  final AliasDictionary aliasDictionary;
-  final IgnoreProcessSet ignoreProcesses;
+  final config = GlobalConfig();
   ForegroundWindowTracer? tracer;
 
   @override
@@ -33,6 +26,10 @@ class RootPage extends StatefulWidget {
 }
 
 class RootPageState extends State<RootPage> {
+  get fwiConfig => widget.config.fwiConfig;
+  get ignoreProcesses => widget.config.ignoreProcesses;
+  get aliases => widget.config.aliases;
+
   final _pages = PageList();
   get _tracer => widget.tracer!;
   int _pageIndex = 0;
@@ -50,8 +47,6 @@ class RootPageState extends State<RootPage> {
       },
       onToggle : toggle,
       foregroundWindowTracer: _tracer,
-      config : widget.config,
-      aliasDictionary : widget.aliasDictionary,
     );
 
     initPageList(_pages, pageInitializer);
@@ -69,7 +64,7 @@ class RootPageState extends State<RootPage> {
   }
 
   enableCurrentPage() {
-    print("Enabled >> $_currentState");
+    //print("Enabled >> $_currentState");
     _currentState?.onEnable();
   }
 
@@ -87,9 +82,9 @@ class RootPageState extends State<RootPage> {
           iconTheme: const IconThemeData(size:24),
         ),
         home : ConfigContainer(
-          config: widget.config.readonly,
-          ignoreProcesses: widget.ignoreProcesses,
-          aliases : widget.aliasDictionary,
+          config: fwiConfig.readonly,
+          ignoreProcesses: ignoreProcesses,
+          aliases : aliases,
           child: NavigationView(
             pane : NavigationPane(
               selected: _pageIndex,

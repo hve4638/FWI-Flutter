@@ -3,7 +3,7 @@ import 'package:wininfo/fwiconfig/alias_dic.dart';
 import 'package:wininfo/page/navigate_page/navigate_page.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
 import 'package:wininfo/page/pages/win_tracer/win_tracer.dart';
-import '/timer/intervalevent.dart';
+import '/timer/interval_event.dart';
 import 'setting_pages/main_page.dart';
 import 'setting_pages/setting_navigator.dart';
 import './setting_pages/setting_sub_page.dart';
@@ -39,8 +39,8 @@ class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Lat
       config : widget.config,
       aliasDictionary: widget.aliasDictionary,
     );
-    _titles.add( getTitleWidget("설정", context: context) );
-    _subpages.add( mainPage! );
+    _titles.add( getTitleWidget("설정", context: context, noArrow: true) );
+    _subpages.add(mainPage!);
 
     laterCall((timeStamp) {
       widget.onInitState(this);
@@ -80,25 +80,56 @@ class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Lat
   }
 
   getTitleWidget(String name, {
+    required BuildContext context,
+    bool noArrow = false
+  }) {
+    if (noArrow) {
+      return _getTitleButton(name, context: context);
+    } else {
+      return Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          _getArrow(),
+          _getTitleButton(name, context: context),
+        ],
+      );
+    }
+  }
+
+  _getArrow() {
+    return Column(
+      children: [
+        const SizedBox(height: 5 ),
+        Expanded(
+          child: Image.asset("assets/arrow_right.png",
+            color: Colors.black,
+            width: 18.0,
+          ),
+        ),
+      ],
+    );
+  }
+
+  _getTitleButton(String name, {
     required BuildContext context
   }) {
     var depth = _titles.length;
 
     return TextButton(
-      onPressed: () {
-        while (depth+1 < _titles.length) {
-          pop(context);
-        }
-      },
-      child: Text(name,
-        style: TextStyle(
-          fontSize : titleSize,
+        onPressed: () {
+          while (depth+1 < _titles.length) {
+            pop(context);
+          }
+        },
+        child: Text(name,
+          style: TextStyle(
+            fontSize : titleSize,
+          ),
         ),
-      ),
-      style: ButtonStyle(
-        foregroundColor: ButtonState.all(Colors.black),
-      ),
-    );
+        style: ButtonStyle(
+          foregroundColor: ButtonState.all(Colors.black),
+        ),
+      );
   }
 
   @override
@@ -146,8 +177,6 @@ class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Lat
     var subpage = _subpages.removeLast();
     subpage.dispose();
     _titles.removeLast();
-
-    print("setting disable");
   }
 }
 

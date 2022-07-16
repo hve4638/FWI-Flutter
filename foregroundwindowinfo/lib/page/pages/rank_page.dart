@@ -4,7 +4,7 @@ import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
 import '/foregroundwindowinfo/foreground_window_tracer.dart';
 import '/foregroundwindowinfo/foreground_window_info.dart';
 import '/foregroundwindowinfo/trace_logger.dart';
-import '/timer/intervalevent.dart';
+import '/timer/interval_event.dart';
 import 'win_tracer/win_tracer_stful.dart';
 
 class RankPage extends WinTracerStatefulWidget {
@@ -15,12 +15,12 @@ class RankPage extends WinTracerStatefulWidget {
     required this.onToggle,
     required this.config
   }) : super(key: key, onInitState : onInitState) {
-    logger = foregroundWindowTracer.logger;
+    getRankList = foregroundWindowTracer.getRankList;
   }
   final FwiConfigReadonly config;
   final ForegroundWindowTracer foregroundWindowTracer;
   final Function onToggle;
-  TraceLogger ?logger;
+  List<Widget> Function()? getRankList;
   double lastScrollPosition = 0;
   bool enableTrace = false;
 
@@ -36,7 +36,7 @@ class _RankPageState extends WinTracerState<RankPage> {
   List<Widget> itemList = [];
 
   updateList() {
-    var _list = widget.logger?.getRankList();
+    var _list = widget.getRankList!();
 
     setState(() {
       lastUpdate = DateTime.now();
