@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'package:csv/csv.dart';
 import 'dart:io';
-import './alias_dic.dart';
+
+import './alias_dictionary.dart';
 import './fwi_config_manager.dart';
 import './ignore_process_set.dart';
 
@@ -31,9 +33,9 @@ class GlobalConfig {
     _fwiConfigManager = fwiConfig;
   }
 
-  get aliases => _aliasDictionary!;
-  get ignoreProcesses => _ignoreProcessSet!;
-  get fwiConfig => _fwiConfigManager!;
+  AliasDictionary get aliases => _aliasDictionary!;
+  IgnoreProcessSet get ignoreProcesses => _ignoreProcessSet!;
+  FwiConfigManager get fwiConfig => _fwiConfigManager!;
 
   save(String filename) async {
     var file = File(filename);
@@ -64,3 +66,41 @@ class GlobalConfig {
     }
   }
 }
+
+class GlobalText {
+  GlobalText._constructor();
+
+  static final _inst = GlobalText._constructor();
+
+  factory GlobalText() {
+    return _inst;
+  }
+
+  final _dict = <String, String>{};
+
+  load(String filename) async {
+    var input = File('./language/$filename').openRead();
+    var column = await input.transform(utf8.decoder).transform(const CsvToListConverter()).toList();
+
+    _dict.clear();
+    for(var row in column) {
+      if (row.length < 2) {
+        continue;
+      } else if (row[0] == "") {
+        continue;
+      } else {
+        _dict[row[0]] = row[1];
+      }
+    }
+  }
+
+  String operator[](String key) {
+    return _dict[key] ?? key;
+  }
+}
+
+
+
+
+
+

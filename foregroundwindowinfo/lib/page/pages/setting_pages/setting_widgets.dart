@@ -111,12 +111,78 @@ inputBox(String name, {
           ),
           Expanded(
               child: Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10,0,10,0),
                 child : Text(name,
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: globalFontSize,
                   ),
+                )
+              )
+          ),
+          SizedBox(
+            width : 90,
+            child : TextBox(
+              controller: controller,
+              placeholder: placeholder,
+              suffix: Text(suffix),
+              onChanged: onChanged,
+              onSubmitted: onSubmitted,
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          const SizedBox(
+            width : 15,
+          ),
+        ]
+    ),
+  );
+}
+
+inputBoxWithDescription(String name, {
+  required String placeholder,
+  required String description,
+  String suffix = "",
+  IconData? iconData,
+  TextEditingController? controller,
+  void Function(String)? onChanged,
+  void Function(String)? onSubmitted,
+}) {
+  var h = 90;
+  var marginInt = 4;
+  onChanged ??= (_) {};
+  onSubmitted ??= (_) {};
+
+  return OptionContainer(
+    child: Row(
+        children : [
+          SizedBox(
+              width: 55,
+              child: Center(
+                child: Icon(iconData ?? FluentIcons.list),
+              )
+          ),
+          Expanded(
+              child: Container(
+                padding: const EdgeInsets.fromLTRB(10,0,10,0),
+                child : Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children : [
+                      Text(name,
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: globalFontSize,
+                        ),
+                      ),
+                      const SizedBox( height:2 ),
+                      Text(" $description",
+                        style: const TextStyle(
+                          color: Color(0xFF5B5B5B),
+                          fontSize: globalFontSize-3,
+                        ),
+                      ),
+                    ]
                 ),
               )
           ),

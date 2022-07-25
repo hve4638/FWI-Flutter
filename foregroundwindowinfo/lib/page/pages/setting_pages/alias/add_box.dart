@@ -1,6 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import '../process_page/process_widget.dart';
-import './message_box.dart';
 import './editor/editor.dart';
 
 import './message/message.dart';

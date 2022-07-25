@@ -4,11 +4,10 @@ import '../fwiconfig/global_config.dart';
 import '/fwi/trace_logger.dart';
 import '/timer/interval_event.dart';
 import '/timer/timerevent.dart';
-import '/fwiconfig/fwi_config_readonly.dart';
-import '/fwiconfig/alias_dic.dart';
+import '/fwiconfig/alias_dictionary.dart';
 import '/fwiconfig/ignore_process_set.dart';
 
-import 'foreground_window_info.dart';
+import 'fwi/fwi.dart';
 import 'windowinfo/windowinfo.dart';
 import './fwi_logger.dart';
 
@@ -24,13 +23,13 @@ class ForegroundWindowTracer {
 
   final tracer = IntervalEvent();
   final counter = TimerEvent();
-  final _info = ForegroundWindowInfo();
+  final _info = FWI();
 
   var _lastChanged = DateTime.now();
   dynamic _appPointer;
   String _time = "00:00:00";
 
-  Function(ForegroundWindowInfo info)? onChanged;
+  Function(FWI info)? onChanged;
   FwiLogger? logger;
 
   ForegroundWindowTracer({
@@ -53,7 +52,7 @@ class ForegroundWindowTracer {
   String get time => _time;
 
   testPush() {
-    var _t = ForegroundWindowInfo();
+    var _t = FWI();
     for(var i=0; i<10; i++) {
       _t.set(
         title: "test",
@@ -71,8 +70,12 @@ class ForegroundWindowTracer {
     _appPointer = WindowInfoLazy().pointer;
 
     logger?.start();
-    tracer.start(config.fwiConfig.traceUpdateTime, _trace);
+    tracer.start(config.fwiConfig.traceUpdateDuration, _trace);
     counter.start(timerUpdateTime, (timer) { _time = timer.getTimeFormat(); });
+
+    if (timelineLog.firstDate == null) {
+      timelineLog.setFirstDate(DateTime.now());
+    }
   }
 
   _trace() async {
@@ -86,7 +89,7 @@ class ForegroundWindowTracer {
         title: wInfo.title,
         name: wInfo.name,
         time: _time,
-        alias: config.aliases[wInfo.name],
+        alias: config.aliases.getAliasIfExistsOrAddNoAliases(wInfo.name),
         date: DateTime.now(),
       );
 

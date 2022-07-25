@@ -1,7 +1,7 @@
-import './fwi.dart';
+import './fwi_readonly.dart';
 
-class ForegroundWindowInfo implements FWI {
-  bool isRunning = false;
+class FWI implements FWIReadOnly {
+  bool _isRunning = false;
   String _title = "Unknown";
   String _name = "Unknown";
   String ?_alias;
@@ -9,6 +9,8 @@ class ForegroundWindowInfo implements FWI {
   String _time = "00:00:00";
   DateTime _date = DateTime.now();
 
+  @override
+  get isRunning => _isRunning;
   @override
   get title => _title;
   @override
@@ -47,11 +49,15 @@ class ForegroundWindowInfo implements FWI {
     _time = time;
   }
 
+  set isRunning(bool value) {
+    _isRunning = value;
+  }
+
   set title(String title) {
     _title = title;
   }
 
-  void copy(ForegroundWindowInfo source) {
+  void copy(FWIReadOnly source) {
     isRunning = source.isRunning;
     set(
       title: source.title,
@@ -61,5 +67,22 @@ class ForegroundWindowInfo implements FWI {
       alias: source.alias,
       path: source.path,
     );
+  }
+
+  void reset(FWIReadOnly source) {
+    isRunning = source.isRunning;
+    set(
+      title: source.title,
+      name: source.actualName,
+      time: source.time,
+      date: source.date,
+      alias: source.alias,
+      path: source.path,
+    );
+  }
+
+  @override
+  toString() {
+    return "FWI[name:$actualName($alias) title:'$title' time:$time date:$date]";
   }
 }

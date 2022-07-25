@@ -1,7 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 
+import '/fwiconfig/global_config.dart';
 import '../../process_page/process_list_manager.dart';
 import '../../process_page/process_widget.dart';
 import '../../widget_map/widget_map.dart';
@@ -11,27 +12,25 @@ import './editor.dart';
 
 
 class IgnoreProcessEditor implements Editor, ProcessListManager {
+  final config = GlobalConfig();
+
   final boxes = WidgetMap<ProcessWidget>();
   final noAliasBoxes = WidgetMap<ProcessWidget>();
   final TextEditingController controller;
   Function(List<ProcessWidget>, List<ProcessWidget>) onChanged;
-  final IgnoreProcessSet ignoreProcesses;
-  final NoAliasDictionary noAliases;
 
   IgnoreProcessEditor({
-    required this.ignoreProcesses,
-    required this.noAliases,
     required this.controller,
     required this.onChanged,
   });
 
   @override
   add(String name, { bool update = true, bool? noAliasFlag }) {
-    if (noAliases.contains(name)) {
+    if (config.aliases.noAlias.contains(name)) {
       removeAtNoAliases(name, update: false);
       noAliasFlag ??= true;
     }
-    ignoreProcesses.add(name);
+    config.ignoreProcesses.add(name);
     _addWidget(name, noAliasFlag: noAliasFlag ?? false);
 
     if (update) this.update();
@@ -55,7 +54,7 @@ class IgnoreProcessEditor implements Editor, ProcessListManager {
 
   @override
   remove(String name, { bool update = true }) {
-    ignoreProcesses.remove(name);
+    config.ignoreProcesses.remove(name);
     boxes.remove(name);
 
     if (update) this.update();
@@ -63,11 +62,11 @@ class IgnoreProcessEditor implements Editor, ProcessListManager {
 
   @override
   save() {
-    ignoreProcesses.save();
+    config.ignoreProcesses.save();
   }
 
   addAtNoAliases(String name, { bool update = true }) {
-    noAliases.add(name);
+    config.aliases.noAlias.add(name);
     _addWidgetAtNoAlias(name);
 
     if (update) this.update();
@@ -81,7 +80,7 @@ class IgnoreProcessEditor implements Editor, ProcessListManager {
   }
 
   removeAtNoAliases(String name, { bool update = true }) {
-    noAliases.remove(name);
+    config.aliases.noAlias.remove(name);
     noAliasBoxes.remove(name);
 
     if (update) this.update();
@@ -98,7 +97,7 @@ class IgnoreProcessEditor implements Editor, ProcessListManager {
   resetNoAliasList() {
     noAliasBoxes.clear();
 
-    for(var key in noAliases.toList()) {
+    for(var key in config.aliases.noAlias.toList()) {
       _addWidgetAtNoAlias(key);
     }
   }
@@ -107,7 +106,7 @@ class IgnoreProcessEditor implements Editor, ProcessListManager {
   resetProcessList() {
     boxes.clear();
 
-    for(var key in ignoreProcesses.toList()) {
+    for(var key in config.ignoreProcesses.toList()) {
       _addWidget(key);
     }
   }

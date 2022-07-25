@@ -1,7 +1,8 @@
 import 'dart:io';
+import '../fwiconfig/global_config.dart';
 import 'log/timeline_log.dart';
 import 'log/rank_log.dart';
-import 'foreground_window_info.dart';
+import 'fwi/fwi.dart';
 import '/timer/interval_event.dart';
 import './log/max_time_event.dart';
 import './trace_logger.dart';
@@ -10,6 +11,7 @@ class FwiLogger implements TraceLogger {
   final TimelineLog timelineLog;
   final RankLog rankLog;
   final String Function() getCurrentTimeFormat;
+  final config = GlobalConfig();
 
   MaxTimeEvent? maxTimeEvent;
   var rankUpdateEvent = IntervalEvent();
@@ -18,7 +20,7 @@ class FwiLogger implements TraceLogger {
   File? file;
 
   FwiLogger(name, {
-    required ForegroundWindowInfo foregroundWindowInfo,
+    required FWI foregroundWindowInfo,
     required this.getCurrentTimeFormat,
     required this.timelineLog,
     required this.rankLog,
@@ -30,7 +32,6 @@ class FwiLogger implements TraceLogger {
       },
       getCurrentTimeFormat : getCurrentTimeFormat,
       currentInfo: foregroundWindowInfo,
-      duration: const Duration(seconds: 5),
     );
   }
 
@@ -47,6 +48,7 @@ class FwiLogger implements TraceLogger {
       }
     });
 
+    maxTimeEvent?.setIntervalTime(duration: Duration( minutes: config.fwiConfig.timelineWriteDuration ));
     maxTimeEvent?.start();
   }
 
@@ -56,7 +58,7 @@ class FwiLogger implements TraceLogger {
     maxTimeEvent?.stop();
   }
 
-  add(ForegroundWindowInfo foregroundWindowInfo) async {
+  add(FWI foregroundWindowInfo) async {
     var title = foregroundWindowInfo.title.replaceAll("\n", "");
     var date = foregroundWindowInfo.date;
     var name = foregroundWindowInfo.name;
@@ -64,7 +66,7 @@ class FwiLogger implements TraceLogger {
     maxTimeEvent?.addInfo(foregroundWindowInfo);
 
     rankLastDate = DateTime.now();
-    rankLog.setInfo(foregroundWindowInfo);
+    rankLog.setCurrentFwi(foregroundWindowInfo);
     _addFile(title : title, date: date, name: name);
     changeCount++;
   }

@@ -2,6 +2,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/process_list_manager.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/process_widget.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/search_dropdown/search_dropdown_item.dart';
+import '../../../../fwiconfig/global_config.dart';
 import './process_filter.dart';
 import './search_enum.dart';
 import 'search_dropdown/search_dropdown.dart';
@@ -25,6 +26,7 @@ class ProcessListPage extends StatefulWidget {
 }
 
 class _ProcessPageState extends State<ProcessListPage> {
+  final globalText = GlobalText();
   bool _showNoAlias = false;
   String _searchText = "";
   SearchType _searchType = SearchType.name;
@@ -64,12 +66,12 @@ class _ProcessPageState extends State<ProcessListPage> {
       },
       items : [
         SearchDropDownItem(
-          title: "프로세스명",
+          title: globalText["SEARCH_TYPE_PROCESS"],
           icon: FluentIcons.align_justify,
           value: SearchType.name,
         ),
         SearchDropDownItem(
-          title: "별명",
+          title: globalText["SEARCH_TYPE_ALIAS"],
           icon: FluentIcons.favorite_star,
           value: SearchType.alias,
         ),
@@ -151,7 +153,7 @@ class _ProcessPageState extends State<ProcessListPage> {
                     Container(
                         padding : const EdgeInsets.all(3),
                         child: ToggleButton(
-                          child: const Text("별명이 지정되지 않은 프로세스 표시"),
+                          child: Text(globalText["BUTTON_SHOW_PROCESS_WITHOUT_ALIAS"]),
                           checked: _showNoAlias,
                           onChanged: (value) {
                             setState(() {
@@ -177,7 +179,7 @@ class _ProcessPageState extends State<ProcessListPage> {
                   Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("프로세스 검색",
+                        Text(globalText["SEARCH_PROCESS"],
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
@@ -190,7 +192,7 @@ class _ProcessPageState extends State<ProcessListPage> {
                               _searchText = text;
                               widget.manager.update(save:false);
                             },
-                            placeholder: "검색",
+                            placeholder: globalText["SEARCH_PLACEHOLDER"],
                             suffix : Container(
                               padding: const EdgeInsets.all(2),
                               child : const Icon(FluentIcons.search),

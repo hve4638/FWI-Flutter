@@ -1983,3 +1983,259 @@
 2022-07-16 15:41:04.881760|Chrome|Google Keep - Chrome
 2022-07-16 15:41:12.284736|Edge|(3) 꺄하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하하 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
 2022-07-16 15:41:20.987885|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-16 17:15:48.387948|Android Studio|foregroundwindowinfo – main.dart [foregroundwindowinfo]
+2022-07-16 17:16:55.494409|Edge|(5) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-16 17:17:05.688523|Android Studio|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-07-16 17:17:18.298688|Chrome|Google Keep - Chrome
+2022-07-16 17:17:24.799777|Android Studio|foregroundwindowinfo – foreground_window_info.dart [foregroundwindowinfo]
+2022-07-16 17:18:24.601287|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-16 17:18:37.804693|Chrome|Google Keep - Chrome
+2022-07-16 17:18:45.302165|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-16 17:18:56.195722|Chrome|Google Keep - Chrome
+2022-07-16 17:18:59.507037|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-16 17:19:05.001570|Chrome|Google Keep - Chrome
+2022-07-16 17:19:07.294519|notepad++|C:\Users\hve46\Documents\Foregroundwindowinfo\alias.json - Notepad++
+2022-07-16 17:19:15.493647|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-16 17:19:23.301331|Chrome|Google Keep - Chrome
+2022-07-16 17:19:27.902913|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-16 19:45:33.559092|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-16 20:59:59.878284|studio64.exe|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-16 21:00:00.891158|chrome.exe|Google Keep - Chrome
+2022-07-16 21:00:01.891095|studio64.exe|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-16 21:00:02.379284|chrome.exe|Google Keep - Chrome
+2022-07-16 21:09:23.114481|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-16 21:09:23.615722|Chrome|Google Keep - Chrome
+2022-07-16 21:09:26.115528|notepad++|다시 읽기
+2022-07-16 21:10:41.622147|Chrome|Flutter map contains key - Google 검색 - Chrome
+2022-07-16 21:11:45.118708|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-16 21:13:01.618511|Chrome|Google Keep - Chrome
+2022-07-16 21:14:12.114714|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-24 17:15:39.038735|Chrome|Google Keep - Chrome
+2022-07-24 17:15:40.537374|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-24 17:20:57.548483|Chrome|(106) [동방귀형수] 동방 프로젝트 열일곱 번째 탄막 슈팅 게임 (22-07-19) | 김도 풀영상 - YouTube - Chrome
+2022-07-24 17:20:58.548609|Android Studio|foregroundwindowinfo – rank_page.dart [foregroundwindowinfo]
+2022-07-24 18:34:58.892440|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 18:34:59.890924|Chrome|Google Keep - Chrome
+2022-07-24 18:36:32.894281|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 18:38:18.381185|Chrome|(107) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 18:39:13.881660|Android Studio|foregroundwindowinfo – setting_widgets.dart [foregroundwindowinfo]
+2022-07-24 18:48:39.384367|Chrome|(108) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 18:49:07.396045|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 18:53:09.395178|Chrome|(108) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 18:53:09.883860|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:18:21.395296|Chrome|(109) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 19:18:22.894256|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:21:41.884007|Chrome|(109) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 19:21:50.390858|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:21:52.886647|Chrome|Google Keep - Chrome
+2022-07-24 19:21:54.391711|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:23:13.890285|Chrome|(109) #103 ㅅㅂ [익스팬드 더 건전 Expand the Gungeon] - YouTube - Chrome
+2022-07-24 19:23:20.890916|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:23:22.385232|Edge|새 탭 - 개인 - Microsoft​ Edge
+2022-07-24 19:23:43.393395|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:23:46.886676|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:23:47.883064|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:27:45.388707|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:27:45.887659|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:33:48.892549|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:33:49.384548|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:33:53.892781|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:51:31.392341|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:52:53.383895|Discord.exe|Discord
+2022-07-24 19:53:19.393790|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 19:59:22.393398|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:59:23.886693|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-24 19:59:36.394364|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 19:59:41.391663|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-24 20:00:56.889115|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 20:00:58.391006|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-24 20:00:59.389726|Edge|(109) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 20:01:00.392266|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-24 20:03:01.889955|Chrome|새 탭 - Chrome
+2022-07-24 20:03:42.891318|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:06:22.890590|Edge|새 탭 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-24 20:06:33.889519|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:22:17.178941|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:22:17.678419|Chrome|Google Keep - Chrome
+2022-07-24 20:22:23.674377|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:23:06.052816|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:23:06.540222|Chrome|Google Keep - Chrome
+2022-07-24 20:23:08.544796|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:29:15.049702|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 20:29:16.541330|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:36:13.049755|ApplicationFrameHost.exe|휴대폰과 연결
+2022-07-24 20:36:30.043516|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:36:50.552522|ApplicationFrameHost.exe|휴대폰과 연결
+2022-07-24 20:37:07.543566|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:38:52.415411|Chrome|Google Keep - Chrome
+2022-07-24 20:38:52.917054|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:39:41.415475|Chrome|새 탭 - Chrome
+2022-07-24 20:40:09.907463|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:40:13.407921|Chrome|flutter - BoxConstraints forces an infinite width - Stack Overflow - Chrome
+2022-07-24 20:40:18.406699|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:40:42.915239|Chrome|flutter - BoxConstraints forces an infinite width - Stack Overflow - Chrome
+2022-07-24 20:41:58.906843|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:42:05.403683|Chrome|LinearProgressIndicator class - material library - Dart API - Chrome
+2022-07-24 20:42:18.917132|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:42:30.667439|Chrome|[Flutter] progress bar(진행바) 만들어보기 :: Devman - Chrome
+2022-07-24 20:42:31.675634|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:44:18.280147|Chrome|BoxConstraints forces an infinite width. - Google 검색 - Chrome
+2022-07-24 20:44:18.782446|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:44:19.268474|Chrome|Google Keep - Chrome
+2022-07-24 20:44:20.779415|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:44:52.281951|Chrome|Google Keep - Chrome
+2022-07-24 20:45:34.779850|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:45:45.770140|ApplicationFrameHost.exe|휴대폰과 연결
+2022-07-24 20:45:56.270701|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:46:00.272454|rundll32.exe|디렉터리에서 찾기
+2022-07-24 20:46:01.776532|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:46:02.776594|PowerToys.ColorPickerUI.exe|
+2022-07-24 20:46:05.783102|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:46:09.280061|PowerToys.ColorPickerUI.exe|Color Picker
+2022-07-24 20:46:15.282081|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:46:17.281364|ShellExperienceHost.exe|휴대폰과 연결에 대한 점프 목록
+2022-07-24 20:46:18.278767|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 20:48:46.845607|Chrome|Google Keep - Chrome
+2022-07-24 20:48:47.356677|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:51:05.856597|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 20:51:07.345783|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:51:12.856069|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 20:51:16.855824|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:51:42.793667|Chrome|Google Keep - Chrome
+2022-07-24 20:51:43.296028|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:51:44.295681|Chrome|Google Keep - Chrome
+2022-07-24 20:51:57.291610|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:52:05.791970|Chrome|HTML progress Tag - Chrome
+2022-07-24 20:52:29.298659|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:54:31.962829|Chrome|Google Keep - Chrome
+2022-07-24 20:54:34.957087|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:56:23.189948|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:56:23.688736|Chrome|BoxConstraints forces an infinite width. - Google 검색 - Chrome
+2022-07-24 20:56:31.692942|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:57:07.685992|Chrome|flutter - Failed assertion: line 549 pos 12: 'child.hasSize': is not true - Stack Overflow - Chrome
+2022-07-24 20:57:19.195322|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 20:58:37.190826|Chrome|BoxConstraints forces an infinite width. - Google 검색 - Chrome
+2022-07-24 20:59:25.688436|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:02:11.640337|Chrome|fluent_ui | Flutter Package - Chrome
+2022-07-24 21:02:13.141912|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:07:53.648656|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 21:07:55.137302|Android Studio|foregroundwindowinfo – rank_widget.dart [foregroundwindowinfo]
+2022-07-24 21:08:24.636492|Chrome|Google Keep - Chrome
+2022-07-24 21:08:51.135216|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:11:25.141121|Chrome|Google Keep - Chrome
+2022-07-24 21:12:27.146140|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 21:12:27.649117|Taskmgr.exe|작업 관리자
+2022-07-24 21:12:55.634669|Edge|(110) 20220218 TRPG 당신들에게 선사하는 향연 키퍼사이드 - YouTube - 개인 - Microsoft​ Edge
+2022-07-24 21:13:35.640526|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:14:12.645135|Chrome|Google Keep - Chrome
+2022-07-24 21:14:37.637081|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:14:40.643318|Chrome|Dart언어공부-07.List 타입 - Chrome
+2022-07-24 21:15:18.644499|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-24 21:15:20.139306|Chrome|www.freeiconspng.com에서 다음 권한을 요청합니다.
+2022-07-24 21:16:12.646882|Android Studio|foregroundwindowinfo – rank_log.dart [foregroundwindowinfo]
+2022-07-25 14:01:40.451053|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:01:42.949791|Chrome|다운로드 - Chrome
+2022-07-25 14:02:03.440504|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:02:31.439854|Chrome|Google Keep - Chrome
+2022-07-25 14:02:32.954091|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:02:46.941889|Chrome|Google Keep - Chrome
+2022-07-25 14:02:51.939889|Edge|(116) 20220326 TRPG 호텔 시어사이드: 위기상황긴급대처피난요령훈련 - YouTube - 개인 - Microsoft​ Edge
+2022-07-25 14:02:56.953111|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:03:01.949912|Chrome|Google Keep - Chrome
+2022-07-25 14:03:02.454767|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:03:07.932837|Chrome|Google Keep - Chrome
+2022-07-25 14:03:10.437761|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:03:13.442353|Chrome|Google Keep - Chrome
+2022-07-25 14:03:15.439246|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:12:31.440825|Chrome|Google Keep - Chrome
+2022-07-25 14:12:32.437883|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:12:33.434857|Chrome|Google Keep - Chrome
+2022-07-25 14:12:37.435616|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:13:51.437006|Chrome|Google Keep - Chrome
+2022-07-25 14:14:10.939319|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:14:11.936886|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:14:13.938200|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:14:19.436718|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:14:19.944478|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:14:37.437268|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:14:40.942232|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:14:57.940544|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:14:59.942605|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:16:03.939331|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:16:13.442994|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:16:35.934910|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:16:48.935839|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:19:55.435047|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-25 14:19:56.934466|Android Studio|foregroundwindowinfo – fwi_timeline.dart [foregroundwindowinfo]
+2022-07-25 14:21:27.939527|Edge|(116) 20220326 TRPG 호텔 시어사이드: 위기상황긴급대처피난요령훈련 - YouTube - 개인 - Microsoft​ Edge
+2022-07-25 14:21:28.437279|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:28:34.440392|Edge|(116) 20220326 TRPG 호텔 시어사이드: 위기상황긴급대처피난요령훈련 - YouTube - 개인 - Microsoft​ Edge
+2022-07-25 14:28:36.440860|Discord.exe|Discord
+2022-07-25 14:28:39.444612|Edge|(116) 20220326 TRPG 호텔 시어사이드: 위기상황긴급대처피난요령훈련 - YouTube - 개인 - Microsoft​ Edge
+2022-07-25 14:28:43.440681|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-25 14:30:31.443353|Chrome|How to use RegEx in Dart? - Stack Overflow - Chrome
+2022-07-26 01:19:00.949380|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:19:02.456957|Chrome|Google Keep - Chrome
+2022-07-26 01:19:12.461525|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:19:13.452771|Chrome|Google Keep - Chrome
+2022-07-26 01:19:14.451608|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:19:14.953866|Chrome|Google Keep - Chrome
+2022-07-26 01:20:27.957715|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:23:46.453281|Chrome|새 탭 - Chrome
+2022-07-26 01:24:36.456442|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:24:42.452255|Chrome|Flutter: Copy To Clipboard example (without any plugins) - Kindacode - Chrome
+2022-07-26 01:24:45.449643|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:24:46.461179|Chrome|Flutter: Copy To Clipboard example (without any plugins) - Kindacode - Chrome
+2022-07-26 01:25:19.453502|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:26:00.453037|Edge|(122) 찌질의 역사 작업이 끝난 전무님 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-26 01:26:03.454176|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:26:12.950954|Chrome|Flutter: Copy To Clipboard example (without any plugins) - Kindacode - Chrome
+2022-07-26 01:26:40.958165|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:27:21.948743|Chrome|scroll - How to make Scrollable text in flutter? - Stack Overflow - Chrome
+2022-07-26 01:27:32.953966|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:27:34.949808|Chrome|scroll - How to make Scrollable text in flutter? - Stack Overflow - Chrome
+2022-07-26 01:27:59.953568|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:28:24.958984|Chrome|scroll - How to make Scrollable text in flutter? - Stack Overflow - Chrome
+2022-07-26 01:28:52.954616|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:29:39.451763|Chrome|fluent_ui | Flutter Package - Chrome
+2022-07-26 01:30:19.449292|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:30:31.451813|Chrome|fluent_ui | Flutter Package - Chrome
+2022-07-26 01:30:39.962024|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:31:35.456937|Chrome|flutter copy text to clipboard - Google 검색 - Chrome
+2022-07-26 01:31:59.953643|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:32:08.450671|Chrome|fluent_ui | Flutter Package - Chrome
+2022-07-26 01:32:11.452619|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:33:06.452446|Chrome|fluent_ui | Flutter Package - Chrome
+2022-07-26 01:33:48.958997|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 01:46:12.453851|Edge|(122) 찌질의 역사 작업이 끝난 전무님 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-26 01:46:17.961404|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-26 01:48:09.589144|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:49:30.583486|Edge|(122) 의외로 진지한 상담소 - YouTube 외 페이지 1개 - 개인 - Microsoft​ Edge
+2022-07-26 01:49:43.083304|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 01:52:33.234199|Android Studio|foregroundwindowinfo – timeline_log.dart [foregroundwindowinfo]
+2022-07-26 02:12:40.773757|Android Studio|foregroundwindowinfo – about_page.dart [foregroundwindowinfo]
+2022-07-26 02:12:41.275963|Chrome|Google Keep - Chrome
+2022-07-26 02:12:41.779909|Android Studio|foregroundwindowinfo – about_page.dart [foregroundwindowinfo]
+2022-07-26 02:12:42.282629|Chrome|Google Keep - Chrome
+2022-07-26 02:13:23.271716|Android Studio|foregroundwindowinfo – about_page.dart [foregroundwindowinfo]
+2022-07-26 02:21:24.638014|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:21:26.140530|Chrome|Google Keep - Chrome
+2022-07-26 02:21:27.137889|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:21:28.142311|Chrome|Google Keep - Chrome
+2022-07-26 02:21:28.645986|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:21:29.147316|Chrome|Google Keep - Chrome
+2022-07-26 02:21:46.636629|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:24.639116|Chrome|Google Keep - Chrome
+2022-07-26 02:23:25.136441|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:27.140622|Chrome|Google Keep - Chrome
+2022-07-26 02:23:28.139499|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:29.638803|Chrome|Google Keep - Chrome
+2022-07-26 02:23:30.642168|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:31.640411|Chrome|Google Keep - Chrome
+2022-07-26 02:23:32.641335|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:33.643773|Chrome|Google Keep - Chrome
+2022-07-26 02:23:35.138228|notepad++|*새로운 1 - Notepad++
+2022-07-26 02:23:37.134508|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-26 02:23:38.141222|notepad++|*새로운 1 - Notepad++
+2022-07-26 02:23:39.136415|Chrome|Google Keep - Chrome
+2022-07-26 02:23:44.142419|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]

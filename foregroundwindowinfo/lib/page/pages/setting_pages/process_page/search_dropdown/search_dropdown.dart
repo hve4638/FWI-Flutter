@@ -27,6 +27,8 @@ class _SearchDropDownState extends State<SearchDropDown> {
     for(var item in widget.items) {
       _add(item);
     }
+
+    _title = widget.items[0].title;
   }
 
   _add(SearchDropDownItem<SearchType> item) {

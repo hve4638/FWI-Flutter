@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:wininfo/page/pages/setting_pages/process_page/process_widget.dart';
-import 'package:wininfo/fwiconfig/config_container.dart';
+import '../../../../fwiconfig/global_config.dart';
 import './message/message.dart';
 
 class IgnoreProcessBox extends StatefulWidget implements ProcessWidget {
@@ -28,6 +28,9 @@ class IgnoreProcessBox extends StatefulWidget implements ProcessWidget {
 }
 
 class _IgnoreProcessBoxState extends State<IgnoreProcessBox> {
+  final globalText = GlobalText();
+  final config = GlobalConfig();
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -55,13 +58,11 @@ class _IgnoreProcessBoxState extends State<IgnoreProcessBox> {
                     name: widget.name,
                     controller: widget.controller,
                     onSubmitted: (name, reject) {
-                      var ignoreProcesses = ConfigContainer.ignoreProcesses(context)!;
-
                       if (name.isEmpty) {
-                        reject.message = "이름을 입력해야 합니다";
+                        reject.message = globalText["MESSAGE_INSERT_PROCESS"];
                         return false;
-                      } else if (name != widget.name && ignoreProcesses.contains(name)) {
-                        reject.message = "이미 존재하는 이름입니다";
+                      } else if (name != widget.name && config.ignoreProcesses.contains(name)) {
+                        reject.message = globalText["MESSAGE_DUPLICATE_PROCESS"];
                         return false;
                       } else {
                         setState(() {

@@ -1,9 +1,9 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
-import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
-import '/foregroundwindowinfo/foreground_window_tracer.dart';
-import '/foregroundwindowinfo/foreground_window_info.dart';
-import '/foregroundwindowinfo/trace_logger.dart';
+import '../../fwiconfig/global_config.dart';
+import '/fwi/foreground_window_tracer.dart';
+import '/fwi/fwi.dart';
+import '/fwi/trace_logger.dart';
 import '/timer/interval_event.dart';
 import 'win_tracer/win_tracer_stful.dart';
 
@@ -13,11 +13,9 @@ class RankPage extends WinTracerStatefulWidget {
     required onInitState,
     required this.foregroundWindowTracer,
     required this.onToggle,
-    required this.config
   }) : super(key: key, onInitState : onInitState) {
     getRankList = foregroundWindowTracer.getRankList;
   }
-  final FwiConfigReadonly config;
   final ForegroundWindowTracer foregroundWindowTracer;
   final Function onToggle;
   List<Widget> Function()? getRankList;
@@ -29,6 +27,9 @@ class RankPage extends WinTracerStatefulWidget {
 }
 
 class _RankPageState extends WinTracerState<RankPage> {
+  final globalText = GlobalText();
+  final config = GlobalConfig();
+
   DateTime lastUpdate = DateTime.now();
   int ?listChangeNumber;
   final _scrollController = ScrollController();
@@ -50,7 +51,7 @@ class _RankPageState extends WinTracerState<RankPage> {
     });
 
     if (value) {
-      event.start(widget.config.rankUpdateTime, () {
+      event.start(config.fwiConfig.rankUpdateDuration, () {
         updateList();
       });
     } else {
@@ -72,54 +73,55 @@ class _RankPageState extends WinTracerState<RankPage> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    _scrollController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Flexible(
-            flex: 20,
-            child : Container(
-              padding : const EdgeInsets.all(20.0),
-              color: Colors.blue,
-              child : Row(
-                children: [
-                  ToggleButton(
-                    child: const Text('실시간'),
-                    checked: widget.enableTrace,
-                    onChanged: setTraceRealTime,
+        Container(
+            height : 70,
+            padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(globalText["PAGE_RANK"],
+                  style: TextStyle(
+                    fontSize: 32.0,
+                    fontWeight: FontWeight.bold,
                   ),
-                  const SizedBox( width : 10, ),
-                  Button(
-                    onPressed: updateList,
-                    child : const Icon(FluentIcons.reset),
-                  ),
-                  const SizedBox( width : 10, ),
-                  Button(
-                    onPressed: () {
-                      widget.foregroundWindowTracer.testPush();
-                    },
-                    child : const Text("test"),
-                  ),
-                  const SizedBox( width : 10, ),
-                  Text("Last update: $lastUpdate"),
-                ],
-              ),
+                )
+              ],
             )
         ),
-        Flexible(
-            flex: 75,
+        Container(
+          height: 70,
+          padding : const EdgeInsets.all(20.0),
+          child : Row(
+            children: [
+              Button(
+                onPressed: updateList,
+                child : const Icon(FluentIcons.reset),
+              ),
+              const SizedBox( width : 10, ),
+              ToggleButton(
+                child: Text(globalText["BUTTON_REALTIME"]),
+                checked: widget.enableTrace,
+                onChanged: setTraceRealTime,
+              ),
+            ],
+          ),
+        ),
+        Expanded(
             child : Container(
               padding : const EdgeInsets.all(20.0),
               child : ListView(
                 controller : _scrollController,
                 children: itemList,
               ),
-            )
-        ),
-        Flexible(
-            flex: 5,
-            child : Container(
-              padding : const EdgeInsets.all(20.0),
-              color: Colors.blue,
             )
         ),
       ],

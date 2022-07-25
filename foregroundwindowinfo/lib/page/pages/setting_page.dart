@@ -1,8 +1,9 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 import 'package:wininfo/page/navigate_page/navigate_page.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
 import 'package:wininfo/page/pages/win_tracer/win_tracer.dart';
+import '../../fwiconfig/global_config.dart';
 import '/timer/interval_event.dart';
 import 'setting_pages/main_page.dart';
 import 'setting_pages/setting_navigator.dart';
@@ -12,18 +13,14 @@ class SettingPage extends SettingNavigatorWidget implements WinTracerWidget {
   const SettingPage({
     Key? key,
     required this.onInitState,
-    required this.config,
-    required this.aliasDictionary,
   }) : super(key: key);
   final Function onInitState;
-  final FwiConfig config;
-  final AliasDictionary aliasDictionary;
-
   @override
   State<SettingNavigatorWidget> createState() => SettingPageState();
 }
 
 class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Later implements WinTracer {
+  final globalText = GlobalText();
   final titleSize = 32.0;
   final _titleNames = <String>[];
   final _subpages = <SettingSubPage>[];
@@ -35,11 +32,8 @@ class SettingPageState extends SettingNavigatorWidgetState<SettingPage> with Lat
   void initState() {
     super.initState();
 
-    mainPage = MainPage(
-      config : widget.config,
-      aliasDictionary: widget.aliasDictionary,
-    );
-    _titles.add( getTitleWidget("설정", context: context, noArrow: true) );
+    mainPage = MainPage();
+    _titles.add( getTitleWidget(globalText["PAGE_SETTING"], context: context, noArrow: true) );
     _subpages.add(mainPage!);
 
     laterCall((timeStamp) {

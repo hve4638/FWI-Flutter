@@ -32,6 +32,7 @@ dependencies:
   path: ^1.8.0
   ffi: ^1.2.1
   io: ^1.0.3
+  csv: ^5.0.1
   async: ^2.8.2
   fluent_ui: ^3.9.0
   window_size:

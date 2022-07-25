@@ -1,20 +1,15 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
 
+import '../../../fwiconfig/global_config.dart';
 import './setting_sub_page.dart';
-import './alias/box.dart';
-import './alias/add_box.dart';
 import 'alias/editor/alias_editor.dart';
 import './process_page/process_page.dart';
-import './alias/message_box.dart';
+import './alias/message/message.dart';
 
 class AliasPage extends StatefulWidget implements SettingSubPage {
-  AliasPage({
-    Key? key,
-    required this.aliasDictionary,
-  }) : super(key: key);
-  final AliasDictionary aliasDictionary;
+  AliasPage({ Key? key, }) : super(key: key);
   void Function()? navigationPop;
+  final globalText = GlobalText();
   var messageBoxNameController = TextEditingController();
   var messageBoxAliasController = TextEditingController();
 
@@ -25,7 +20,7 @@ class AliasPage extends StatefulWidget implements SettingSubPage {
   }
 
   @override
-  get title => "별명";
+  get title => globalText["PAGE_SETTING_ALIAS"];
 
   @override
   setEventPop(pop) {
@@ -37,7 +32,10 @@ class AliasPage extends StatefulWidget implements SettingSubPage {
 }
 
 class _AliasPageState extends State<AliasPage> {
+  final config = GlobalConfig();
   AliasEditor? editor;
+
+  get globalText => widget.globalText;
 
   @override
   void initState() {
@@ -45,7 +43,7 @@ class _AliasPageState extends State<AliasPage> {
     editor = AliasEditor(
       nameController: widget.messageBoxNameController,
       aliasController: widget.messageBoxAliasController,
-      aliases: widget.aliasDictionary,
+      aliases: config.aliases,
       onChanged: (aliasList, noAliasList) {}
     );
 
@@ -56,13 +54,27 @@ class _AliasPageState extends State<AliasPage> {
   Widget build(BuildContext context) {
     return ProcessListPage(
         onAdd: () {
-          showAliasEditBox(
+          showEditMessage(
               context: context,
               name: "",
-              onSubmitted: (name, alias, errorMessage) {
-                editor?.add(name, alias);
-                editor?.save();
-                return true;
+              onSubmitted: (name, alias, rejectMessage) {
+                if (name == "") {
+                  rejectMessage.message = globalText["MESSAGE_INSERT_PROCESS"];
+                  rejectMessage.position = RejectPosition.name;
+                  return false;
+                } else if (config.aliases.containsKey(name)) {
+                  rejectMessage.message = globalText["MESSAGE_DUPLICATE_PROCESS"];
+                  rejectMessage.position = RejectPosition.name;
+                  return false;
+                } else if (alias == "") {
+                  rejectMessage.message = globalText["MESSAGE_INSERT_ALIAS"];
+                  rejectMessage.position = RejectPosition.alias;
+                  return false;
+                } else {
+                  editor?.add(name, alias);
+                  editor?.save();
+                  return true;
+                }
               }
           );
         },

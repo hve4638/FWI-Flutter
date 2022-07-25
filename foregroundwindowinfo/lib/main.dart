@@ -2,7 +2,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:window_size/window_size.dart';
 
 import 'dart:io';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 import 'package:wininfo/fwiconfig/fwi_config_manager.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
@@ -18,6 +18,9 @@ void main() async {
   var _path = "$_docuPath\\$directoryName";
   await Directory(_path).create();
   setWindowFunctions();
+
+  var globalText = GlobalText();
+  globalText.load("korean.csv");
 
   var config = GlobalConfig();
   config.setAliasDictionary(await getAliasDic(_path));
@@ -37,7 +40,7 @@ Future setWindowFunctions() async {
 }
 
 Future<FwiConfigManager> getFwiConfig(String directoryPath) async {
-  var config = FwiConfigManager("$directoryPath\\config.ini");
+  var config = FwiConfigManager("$directoryPath\\config.json");
   await config.load();
 
   return config;

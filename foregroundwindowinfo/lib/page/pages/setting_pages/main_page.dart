@@ -1,9 +1,11 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
-import 'package:wininfo/fwiconfig/config_container.dart';
+import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 import 'package:wininfo/fwiconfig/fwi_config.dart';
 
+import '../../../fwiconfig/global_config.dart';
 import '../win_tracer/win_tracer_stful.dart';
+
+import 'package:wininfo/controllers.dart';
 
 import './alias_page.dart';
 import './ignore_process_page.dart';
@@ -12,14 +14,8 @@ import './setting_sub_page.dart';
 import './setting_navigator.dart';
 
 class MainPage extends StatefulWidget implements SettingSubPage {
-  MainPage({
-    Key? key,
-    required this.config,
-    required this.aliasDictionary,
-  }) : super(key: key);
+  MainPage({ Key? key, }) : super(key: key);
   void Function()? navigationPop;
-  final FwiConfig config;
-  final AliasDictionary aliasDictionary;
 
   @override
   get title => "설정";
@@ -29,7 +25,7 @@ class MainPage extends StatefulWidget implements SettingSubPage {
 
   @override
   dispose() {
-    print("dispose Main Page");
+
   }
 
   @override
@@ -39,119 +35,109 @@ class MainPage extends StatefulWidget implements SettingSubPage {
 }
 
 class _MainPageState extends State<MainPage> {
-  var controllerList = <String, TextEditingController>{};
+  final globalText = GlobalText();
+  final config = GlobalConfig();
+  var controllers = TextEditingControllers();
 
   @override
   void initState() {
     super.initState();
-    addController("traceUpdateTime", widget.config.traceUpdateTime);
-    addController("timelineUpdateTime", widget.config.timelineUpdateTime);
-    addController("rankUpdateTime", widget.config.rankUpdateTime);
-  }
-
-  addController(String name, int value) {
-    var controller = TextEditingController();
-    controller.text = value.toString();
-
-    controllerList[name] = controller;
-
-    return controller;
-  }
-
-  getController(name) {
-    return controllerList[name];
-  }
-
-  disposeController() {
-    controllerList.forEach((_, controller) {
-      controller.dispose();
-    });
-    controllerList.clear();
+    controllers["traceUpdateTime"].text = config.fwiConfig.traceUpdateDuration.toString();
+    controllers["timelineUpdateTime"].text = config.fwiConfig.timelineUpdateDuration.toString();
+    controllers["rankUpdateTime"].text = config.fwiConfig.rankUpdateDuration.toString();
+    controllers["timelineWriteDuration"].text = config.fwiConfig.timelineWriteDuration.toString();
   }
 
   @override
   dispose() {
     super.dispose();
 
-    disposeController();
+    controllers.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return ListView(
         children: [
-          title("갱신 주기"),
-          inputBox("추적 주기",
+          title(globalText["TITLE_UPDATE_TIME"]),
+          inputBox(globalText["UPDATE_TIME_TRACE"],
               placeholder: "1000",
               suffix: "ms",
               iconData : FluentIcons.clock,
-              controller : getController("traceUpdateTime"),
+              controller : controllers["traceUpdateTime"],
               onSubmitted: (text) {
                 var value = int.tryParse(text);
                 if (value == null) return;
 
-                widget.config.traceUpdateTime = value;
-                widget.config.save();
+                config.fwiConfig.traceUpdateDuration = value;
+                config.fwiConfig.save();
               }
           ),
-          inputBox("타임라인 갱신 주기",
-              placeholder: "1",
+          inputBox(globalText["UPDATE_TIME_TIMELINE"],
+              placeholder: "1000",
               suffix: "ms",
               iconData : FluentIcons.trackers,
-              controller : getController("timelineUpdateTime"),
+              controller : controllers["timelineUpdateTime"],
               onSubmitted: (text) {
                 var value = int.tryParse(text);
                 if (value == null) return;
 
-                widget.config.timelineUpdateTime = value;
-                widget.config.save();
+                config.fwiConfig.timelineUpdateDuration = value;
+                config.fwiConfig.save();
               }
           ),
-          inputBox("랭크 갱신 주기",
+          inputBox(globalText["UPDATE_TIME_RANK"],
               placeholder: "1000",
               suffix: "ms",
               iconData : FluentIcons.list,
-              controller : getController("rankUpdateTime"),
+              controller : controllers["rankUpdateTime"],
               onSubmitted: (text) {
                 var value = int.tryParse(text);
                 if (value == null) return;
 
-                widget.config.rankUpdateTime = value;
-                widget.config.save();
+                config.fwiConfig.rankUpdateDuration = value;
+                config.fwiConfig.save();
               }
           ),
           const SizedBox( height: 15 ),
-          title("별명"),
-          buttonBox("별명",
-              iconData : FluentIcons.trackers,
-              onPressed : () {
-                SettingNavigatorWidget.navigator(context).push(AliasPage(
-                  aliasDictionary : widget.aliasDictionary,
-                ));
-              }
-          ),
-          buttonBox("예외 프로세스",
-              iconData : FluentIcons.trackers,
-              onPressed : () {
-                var configContainer = ConfigContainer.of(context)!;
-                var ignoreProcesses = configContainer.ignoreProcesses;
-                var noAliases = configContainer.noAliases;
+          title(globalText["TITLE_TIMELINE"]),
+          inputBoxWithDescription(globalText["TIMELINE_WRITE_TIME"],
+              description : globalText["DESCRIPTION_TIMELINE_WRITE_TIME"],
+              placeholder: "1",
+              suffix: "분",
+              iconData : FluentIcons.list,
+              controller : controllers["timelineWriteDuration"],
+              onSubmitted: (text) {
+                var value = int.tryParse(text);
+                if (value == null) return;
 
-                SettingNavigatorWidget.navigator(context).push(
-                  IgnoreProcessPage(
-                    config: widget.config,
-                    noAliases: noAliases,
-                    ignoreProcesses: ignoreProcesses,
-                  )
-                );
+                config.fwiConfig.timelineWriteDuration = value;
+                config.fwiConfig.save();
               }
           ),
-          buttonBox("test",
-              iconData : FluentIcons.trackers,
-              onPressed : () {
-                print(ConfigContainer.of(context)?.text);
-              }
+          const SizedBox( height: 15 ),
+          title(globalText["TITLE_ALIAS"]),
+          buttonBox(globalText["PAGE_SETTING_ALIAS"],
+            iconData : FluentIcons.trackers,
+            onPressed : () {
+              SettingNavigatorWidget.navigator(context).push(
+                  AliasPage()
+              );
+            }
           ),
+          buttonBox(globalText["PAGE_SETTING_IGNORE_PROCESS"],
+            iconData : FluentIcons.trackers,
+            onPressed : () {
+              var configContainer = config.fwiConfig;
+              var ignoreProcesses = config.ignoreProcesses;
+              var noAliases = config.aliases.noAlias;
+
+              SettingNavigatorWidget.navigator(context).push(
+                IgnoreProcessPage()
+              );
+            }
+          ),
+          const SizedBox( height: 30 ),
         ]
     );
   }

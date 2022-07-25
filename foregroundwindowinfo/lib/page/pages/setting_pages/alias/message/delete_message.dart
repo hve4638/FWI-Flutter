@@ -1,9 +1,13 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
+import '/fwiconfig/global_config.dart';
+
 showDeleteMessage({
   required BuildContext context,
   required bool Function() onSubmitted
 }) {
+  var globalText = GlobalText();
+
   showDialog(
       context: context,
       builder: (context) {
@@ -13,7 +17,7 @@ showDeleteMessage({
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const Text("정말 삭제하시겠습니까?",
+                    Text(globalText["MESSAGE_DELETE"],
                         style: TextStyle(
                           fontSize: 18,
                         )
@@ -23,7 +27,7 @@ showDeleteMessage({
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         TextButton(
-                          child : const Text("취소",
+                          child : Text(globalText["BUTTON_CANCEL"],
                             style: TextStyle(
                               fontSize: 16,
                             ),
@@ -33,7 +37,7 @@ showDeleteMessage({
                           },
                         ),
                         TextButton(
-                          child :const Text("삭제",
+                          child : Text(globalText["BUTTON_DELETE"],
                             style: TextStyle(
                               fontSize: 16,
                               color: Color(0xF4FF3643),

@@ -1,5 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
+import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 
 import '../../widget_map/widget_map.dart';
 import '../../process_page/process_list_manager.dart';

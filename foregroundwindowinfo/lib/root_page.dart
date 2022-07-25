@@ -1,14 +1,10 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import 'package:flutter/widgets.dart';
 import 'fwi/foreground_window_tracer.dart';
 import 'page/page_initializer.dart';
 import 'page/page_list.dart';
 import 'timer/interval_event.dart';
 import 'page/pages/win_tracer/win_tracer.dart';
-import 'page/pages/win_tracer/win_tracer_stful.dart';
-import 'package:wininfo/fwiconfig/fwi_config.dart';
-import 'package:wininfo/fwiconfig/config_container.dart';
-import 'package:wininfo/fwiconfig/alias_dic.dart';
-import 'package:wininfo/fwiconfig/ignore_process_set.dart';
 
 import 'fwiconfig/global_config.dart';
 
@@ -45,7 +41,7 @@ class RootPageState extends State<RootPage> {
         _currentState = state;
         enableCurrentPage();
       },
-      onToggle : toggle,
+      toggleTrace : toggle,
       foregroundWindowTracer: _tracer,
     );
 
@@ -64,7 +60,6 @@ class RootPageState extends State<RootPage> {
   }
 
   enableCurrentPage() {
-    //print("Enabled >> $_currentState");
     _currentState?.onEnable();
   }
 
@@ -81,28 +76,23 @@ class RootPageState extends State<RootPage> {
           accentColor: Colors.blue,
           iconTheme: const IconThemeData(size:24),
         ),
-        home : ConfigContainer(
-          config: fwiConfig.readonly,
-          ignoreProcesses: ignoreProcesses,
-          aliases : aliases,
-          child: NavigationView(
-            pane : NavigationPane(
-              selected: _pageIndex,
-              onChanged: (index) {
-                if (_pageIndex != index) {
-                  disableCurrentPage();
-                  setState(() {
-                    _pageIndex = index;
-                  });
-                }
-              },
-              displayMode: PaneDisplayMode.auto,
-              items : _pages.paneItems(),
-            ),
-            content: NavigationBody(
-              index: _pageIndex,
-              children: _pages.widgets(),
-            ),
+        home : NavigationView(
+          pane : NavigationPane(
+            selected: _pageIndex,
+            onChanged: (index) {
+              if (_pageIndex != index) {
+                disableCurrentPage();
+                setState(() {
+                  _pageIndex = index;
+                });
+              }
+            },
+            displayMode: PaneDisplayMode.auto,
+            items : _pages.paneItems(),
+          ),
+          content: NavigationBody(
+            index: _pageIndex,
+            children: _pages.widgets(),
           ),
         )
       );
@@ -110,34 +100,42 @@ class RootPageState extends State<RootPage> {
 }
 
 initPageList(PageList pages, PageInitializer pageInitializer) {
+  var globalText = GlobalText();
   pages.add(
-      title : "Main",
+      title : globalText["PAGE_MAIN"],
       icon: const Icon(FluentIcons.home),
       widget: pageInitializer.runPage()
   );
   pages.add(
-      title : "Timeline",
+      title : globalText["PAGE_TIMELINE"],
       icon: const Icon(FluentIcons.trackers),
       widget: pageInitializer.timelinePage()
   );
   pages.add(
-      title : "Rank",
+      title : globalText["PAGE_RANK"],
       icon: const Icon(FluentIcons.list),
       widget: pageInitializer.rankPage()
   );
   pages.add(
-      title : "Setting",
+      title : globalText["PAGE_EXPORT"],
+      icon: const Icon(FluentIcons.export),
+      widget: pageInitializer.exportPage()
+  );
+  pages.add(
+      title : globalText["PAGE_SETTING"],
       icon: const Icon(FluentIcons.settings),
       widget: pageInitializer.settingPage()
   );
+  pages.add(
+      title : globalText["PAGE_ABOUT"],
+      icon: const Icon(FluentIcons.questionnaire_mirrored),
+      widget: pageInitializer.aboutPage()
+  );
+  /*
   pages.add(
       title : "Test",
       icon: const Icon(FluentIcons.page),
       widget: pageInitializer.testPage()
   );
-  pages.add(
-      title : "empty",
-      icon: const Icon(FluentIcons.page),
-      widget: pageInitializer.emptyPage()
-  );
+ */
 }

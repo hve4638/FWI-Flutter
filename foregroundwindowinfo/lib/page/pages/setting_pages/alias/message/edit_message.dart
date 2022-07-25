@@ -2,6 +2,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 
 import 'package:wininfo/message_dialog/text_field.dart';
 
+import '../../../../../fwiconfig/global_config.dart';
 import './reject_info.dart';
 import './alert_message.dart';
 
@@ -14,6 +15,7 @@ showEditMessage({
   TextEditingController? aliasController,
   bool nameReadonly = false,
 }) {
+  var globalText = GlobalText();
   const Height = 120.0;
 
   nameController?.text = name;
@@ -64,7 +66,7 @@ showEditMessage({
       context: context,
       builder: (context) {
         return ContentDialog(
-            title: const Text("별명 지정",
+            title: Text(globalText["SET_ALIAS"],
               style: TextStyle(
                 fontSize: 20,
               ),
@@ -78,7 +80,7 @@ showEditMessage({
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         DialogTextField(
-                          placeholder: "프로세스 이름",
+                          placeholder: globalText["PLACEHOLDER_PROCESS"],
                           onChanged: (text) {
                             name = text;
                           },
@@ -92,7 +94,7 @@ showEditMessage({
                           ),
                         ),
                         DialogTextField(
-                          placeholder: "별명",
+                          placeholder: globalText["PLACEHOLDER_ALIAS"],
                           onChanged: (text) {
                             alias = text;
                           },
@@ -108,7 +110,7 @@ showEditMessage({
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             TextButton(
-                              child : const Text("취소",
+                              child : Text(globalText["BUTTON_CANCEL"],
                                 style: TextStyle(
                                   fontSize: 16,
                                 ),
@@ -118,7 +120,7 @@ showEditMessage({
                               },
                             ),
                             TextButton(
-                              child :const Text("확인",
+                              child : Text(globalText["BUTTON_APPLY"],
                                 style: TextStyle(
                                   fontSize: 16,
                                 ),

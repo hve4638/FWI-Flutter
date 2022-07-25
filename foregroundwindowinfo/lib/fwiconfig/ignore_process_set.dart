@@ -1,27 +1,39 @@
 import 'dart:io';
 
 class IgnoreProcessSet {
-  final _set = <String>{};
+  final _caseData = <String>{};
+  final _data = <String>{};
   final String filename;
 
   IgnoreProcessSet(this.filename);
 
   add(String name) {
-    return _set.add(name);
+    _caseData.add(name.toLowerCase());
+    return _data.add(name);
   }
 
   remove(String name) {
-    return _set.remove(name);
+    _caseData.remove(name.toLowerCase());
+    return _data.remove(name);
   }
 
-  contains(String name) {
-    return _set.contains(name);
+  contains(String name, { bool matchCase = false }) {
+    if (matchCase) {
+      return _data.contains(name);
+    } else {
+      return _caseData.contains(name.toLowerCase());
+    }
   }
 
-  get length => _set.length;
+  clear() {
+    _caseData.clear();
+    _data.clear();
+  }
+
+  get length => _data.length;
 
   toList() {
-    var sorted = _set.toList();
+    var sorted = _data.toList();
     sorted.sort();
 
     return sorted;
@@ -42,12 +54,13 @@ class IgnoreProcessSet {
   load() async {
     var file = File(filename);
 
-    _set.clear();
+    clear();
     if (file.existsSync()) {
       var lines = await file.readAsLines();
       for(var name in lines) {
-        _set.add(name);
+        add(name);
       }
     }
   }
 }
+

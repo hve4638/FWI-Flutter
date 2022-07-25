@@ -1,6 +1,6 @@
-import '/fwi/foreground_window_info.dart';
+import '../fwi/fwi/fwi.dart';
 import '/fwi/foreground_window_tracer.dart';
-import '/fwi/fwi.dart';
+import '../fwi/fwi/fwi_readonly.dart';
 
 import '../fwiconfig/global_config.dart';
 import './pages/run_page.dart';
@@ -9,18 +9,20 @@ import './pages/test_page.dart';
 import './pages/empty_page.dart';
 import './pages/timeline_page.dart';
 import './pages/setting_page.dart';
+import './pages/export_page.dart';
+import './pages/about_page.dart';
 import './navigate_page/navigate_page.dart';
 
 class PageInitializer {
   final config = GlobalConfig();
   final Function onInitState;
-  final Function onToggle;
-  ForegroundWindowInfo ?foregroundWindowInfo;
+  final Function toggleTrace;
+  FWI ?foregroundWindowInfo;
   ForegroundWindowTracer foregroundWindowTracer;
 
   PageInitializer({
     required this.onInitState,
-    required this.onToggle,
+    required this.toggleTrace,
     required this.foregroundWindowTracer,
   }) {
     foregroundWindowInfo = foregroundWindowTracer.info();
@@ -30,7 +32,7 @@ class PageInitializer {
     return RunPage(
         onInitState : onInitState,
         foregroundWindowInfo : foregroundWindowInfo!,
-        onToggle: onToggle
+        onToggle: toggleTrace
     );
   }
 
@@ -38,7 +40,7 @@ class PageInitializer {
     return EmptyPage(
       onInitState : onInitState,
       foregroundWindowInfo : foregroundWindowInfo!,
-      onToggle: onToggle,
+      onToggle: toggleTrace,
     );
   }
 
@@ -46,7 +48,7 @@ class PageInitializer {
     return TestPage(
       onInitState : onInitState,
       foregroundWindowInfo : foregroundWindowInfo!,
-      onToggle: onToggle
+      onToggle: toggleTrace
     );
   }
 
@@ -54,7 +56,7 @@ class PageInitializer {
     return TimelinePage(
       onInitState : onInitState,
       foregroundWindowTracer : foregroundWindowTracer,
-      onToggle: onToggle
+      toggleTrace: toggleTrace
     );
   }
 
@@ -62,12 +64,25 @@ class PageInitializer {
     return RankPage(
       onInitState : onInitState,
       foregroundWindowTracer : foregroundWindowTracer,
-      onToggle: onToggle
+      onToggle: toggleTrace
     );
   }
 
   settingPage() {
     return SettingPage(
+      onInitState : onInitState,
+    );
+  }
+
+  exportPage() {
+    return ExportPage(
+      onInitState : onInitState,
+      foregroundWindowTracer : foregroundWindowTracer,
+    );
+  }
+
+  aboutPage() {
+    return AboutPage(
       onInitState : onInitState,
     );
   }

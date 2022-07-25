@@ -1,12 +1,9 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/fwi_config_readonly.dart';
 
-import '/fwi/fwi.dart';
+import '../../fwiconfig/global_config.dart';
 import './win_tracer/win_tracer_stful.dart';
-import '/foregroundwindowinfo/foreground_window_info.dart';
+import '/fwi/fwi.dart';
 import '/timer/interval_event.dart';
-
-import 'package:wininfo/fwiconfig/config_container.dart';
 
 
 class TestPage extends WinTracerStatefulWidget {
@@ -16,7 +13,7 @@ class TestPage extends WinTracerStatefulWidget {
     required this.foregroundWindowInfo,
     required this.onToggle,
   }) : super(key: key, onInitState : onInitState);
-  final FWI foregroundWindowInfo;
+  final FWIReadOnly foregroundWindowInfo;
   final Function onToggle;
 
   @override
@@ -24,8 +21,9 @@ class TestPage extends WinTracerStatefulWidget {
 }
 
 class _TestPageState extends WinTracerState<TestPage> {
+  final config = GlobalConfig();
   var event = IntervalEvent();
-  var info = ForegroundWindowInfo();
+  var info = FWI();
   var _configTraceUpdateTime = 0;
   var _configTimelineUpdateTime = 0;
   var _configRankUpdateTime = 0;
@@ -38,9 +36,9 @@ class _TestPageState extends WinTracerState<TestPage> {
     event.start(100, () {
       setState(() {
         info.copy(widget.foregroundWindowInfo);
-        _configTraceUpdateTime = widget.config.traceUpdateTime;
-        _configTimelineUpdateTime = widget.config.timelineUpdateTime;
-        _configRankUpdateTime = widget.config.rankUpdateTime;
+        _configTraceUpdateTime = config.fwiConfig.traceUpdateDuration;
+        _configTimelineUpdateTime = config.fwiConfig.timelineUpdateDuration;
+        _configRankUpdateTime = config.fwiConfig.rankUpdateDuration;
       });
     });
   }
@@ -113,7 +111,7 @@ class _TestPageState extends WinTracerState<TestPage> {
                     Text("count: $_ipsCount"),
                     Button(
                         onPressed : () {
-                          var ips = ConfigContainer.ignoreProcesses(context)!;
+                          var ips = config.ignoreProcesses;
                           var text = "";
                           for(var name in ips.toList()) {
                             text += name + " ";

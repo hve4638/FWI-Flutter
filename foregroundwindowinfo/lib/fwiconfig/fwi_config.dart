@@ -1,10 +1,12 @@
 abstract class FwiConfig {
-  int get traceUpdateTime;
-  int get timelineUpdateTime;
-  int get rankUpdateTime;
-  set traceUpdateTime(int value);
-  set timelineUpdateTime(int value);
-  set rankUpdateTime(int value);
+  int get traceUpdateDuration;
+  int get timelineUpdateDuration;
+  int get rankUpdateDuration;
+  int get timelineWriteDuration;
+  set traceUpdateDuration(int value);
+  set timelineUpdateDuration(int value);
+  set rankUpdateDuration(int value);
+  set timelineWriteDuration(int value);
   get readonly;
   save();
   load();

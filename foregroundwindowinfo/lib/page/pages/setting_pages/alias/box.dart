@@ -1,7 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
-import 'package:wininfo/fwiconfig/config_container.dart';
-
+import '../../../../fwiconfig/global_config.dart';
 import '../process_page/process_widget.dart';
 import './editor/editor.dart';
 import './message/message.dart';
@@ -37,6 +36,8 @@ class AliasBox extends StatefulWidget implements ProcessWidget {
 }
 
 class _AliasBoxState extends State<AliasBox> {
+  final config = GlobalConfig();
+
   @override
   Widget build(BuildContext context) {
     String name = widget.name;
@@ -72,13 +73,11 @@ class _AliasBoxState extends State<AliasBox> {
                     nameController: widget.nameController,
                     aliasController: widget.aliasController,
                     onSubmitted: (name, alias, rejectMessage) {
-                      var aliases = ConfigContainer.aliases(context)!;
-
                       if (name.isEmpty) {
                         rejectMessage.message = "이름을 입력해야 합니다";
                         rejectMessage.position = RejectPosition.name;
                         return false;
-                      } else if (name != widget.name && aliases[name] != null) {
+                      } else if (name != widget.name && config.aliases[name] != null) {
                         rejectMessage.message = "이미 존재하는 이름입니다";
                         rejectMessage.position = RejectPosition.name;
                         return false;
