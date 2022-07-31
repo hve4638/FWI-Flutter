@@ -1,3 +1,4 @@
+import '../../exceptions/exception_handler.dart';
 import 'wi.dart';
 import 'package:ffi/ffi.dart';
 

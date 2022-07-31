@@ -24,7 +24,9 @@ class FWI implements FWIReadOnly {
   @override
   get actualName => _name;
   @override
-  get alias => _alias ?? "unknown";
+  get alias => _alias ?? "no-alias";
+  @override
+  get hasAlias => (_alias != null);
 
   void set({
     String ?title,
@@ -64,7 +66,7 @@ class FWI implements FWIReadOnly {
       name: source.actualName,
       time: source.time,
       date: source.date,
-      alias: source.alias,
+      alias: (source.hasAlias) ? source.alias : null,
       path: source.path,
     );
   }

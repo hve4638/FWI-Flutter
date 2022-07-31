@@ -1,7 +1,9 @@
+import 'dart:io';
+import 'dart:async';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:window_size/window_size.dart';
+import 'package:wininfo/exceptions/exception_handler.dart';
 
-import 'dart:io';
 import 'package:wininfo/fwiconfig/alias_dictionary.dart';
 import 'package:wininfo/fwiconfig/fwi_config_manager.dart';
 import 'package:wininfo/fwiconfig/ignore_process_set.dart';
@@ -27,7 +29,12 @@ void main() async {
   config.setIgnoreProcess(await getIgnoreProcesses(_path));
   config.setFwiConfig(await getFwiConfig(_path));
 
-  runApp(RootPage());
+  var crashReporter = CrashReporter();
+  crashReporter.handler(
+    run : () {
+      runApp(RootPage());
+    }
+  );
 }
 
 Future setWindowFunctions() async {

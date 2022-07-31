@@ -46,7 +46,6 @@ class AliasDictionary with JsonIO {
   }
 
   add(String name, String alias) {
-    print("$name $alias");
     _noCaseData[name.toLowerCase()] = alias;
     _data[name] = alias;
 
@@ -64,12 +63,10 @@ class AliasDictionary with JsonIO {
   }
 
   save() {
-    print("save!");
     saveJson(filename, contents: _data);
   }
 
   load() {
-    print("load!");
     var _map = loadJson(filename);
 
     if (_map != null) {

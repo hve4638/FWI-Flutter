@@ -7,6 +7,7 @@ abstract class FWIReadOnly {
   DateTime get date;
   String get actualName;
   String get alias;
+  bool get hasAlias;
 
   @override
   toString() {

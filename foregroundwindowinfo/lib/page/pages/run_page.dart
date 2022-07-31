@@ -1,4 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
+import 'package:wininfo/exceptions/exception_handler.dart';
 import '/fwi/fwi.dart';
 import '../../fwiconfig/global_config.dart';
 import '/timer/interval_event.dart';

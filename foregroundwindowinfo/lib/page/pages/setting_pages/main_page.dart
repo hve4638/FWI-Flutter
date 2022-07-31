@@ -1,9 +1,7 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:wininfo/fwiconfig/alias_dictionary.dart';
-import 'package:wininfo/fwiconfig/fwi_config.dart';
+import 'package:wininfo/exceptions/exception_handler.dart';
 
 import '../../../fwiconfig/global_config.dart';
-import '../win_tracer/win_tracer_stful.dart';
 
 import 'package:wininfo/controllers.dart';
 
@@ -12,6 +10,7 @@ import './ignore_process_page.dart';
 import './setting_widgets.dart';
 import './setting_sub_page.dart';
 import './setting_navigator.dart';
+
 
 class MainPage extends StatefulWidget implements SettingSubPage {
   MainPage({ Key? key, }) : super(key: key);
@@ -138,6 +137,24 @@ class _MainPageState extends State<MainPage> {
             }
           ),
           const SizedBox( height: 30 ),
+          buttonBox("write",
+              iconData : FluentIcons.trackers,
+              onPressed : () {
+                var crashReporter = CrashReporter();
+                crashReporter.writeLine("throw error!");
+              }
+          ),
+          buttonBox("occur error",
+              iconData : FluentIcons.trackers,
+              onPressed : () {
+                try {
+                  throw Exception("========THROW ERROR!=======");
+                } on Exception catch(exception) {
+                  CrashReporter().writeException(exception);
+                }
+
+              }
+          ),
         ]
     );
   }

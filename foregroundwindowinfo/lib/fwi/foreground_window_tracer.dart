@@ -1,5 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
+import '../exceptions/exception_handler.dart';
 import '../fwiconfig/global_config.dart';
 import '/fwi/trace_logger.dart';
 import '/timer/interval_event.dart';
@@ -50,20 +51,6 @@ class ForegroundWindowTracer {
   DateTime get lastChanged => _lastChanged;
 
   String get time => _time;
-
-  testPush() {
-    var _t = FWI();
-    for(var i=0; i<10; i++) {
-      _t.set(
-        title: "test",
-        name: "Count: $i",
-        time: "00:00",
-        date: DateTime.now(),
-      );
-      logger?.add(_t);
-    }
-    return;
-  }
 
   start() {
     _info.isRunning = true;

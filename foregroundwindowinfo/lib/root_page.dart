@@ -1,5 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter/widgets.dart';
+import 'exceptions/exception_handler.dart';
 import 'fwi/foreground_window_tracer.dart';
 import 'page/page_initializer.dart';
 import 'page/page_list.dart';

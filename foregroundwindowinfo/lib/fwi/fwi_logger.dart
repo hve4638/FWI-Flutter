@@ -1,4 +1,5 @@
 import 'dart:io';
+import '../exceptions/exception_handler.dart';
 import '../fwiconfig/global_config.dart';
 import 'log/timeline_log.dart';
 import 'log/rank_log.dart';

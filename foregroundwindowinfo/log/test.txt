@@ -2239,3 +2239,43 @@
 2022-07-26 02:23:38.141222|notepad++|*새로운 1 - Notepad++
 2022-07-26 02:23:39.136415|Chrome|Google Keep - Chrome
 2022-07-26 02:23:44.142419|Android Studio|foregroundwindowinfo – export_page.dart [foregroundwindowinfo]
+2022-07-28 15:18:41.351245|Chrome|Vampire Survivors - 나무위키 - Chrome
+2022-07-28 16:58:08.422825|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\build\windows\runner\Release\error_log.txt - Notepad++
+2022-07-28 16:58:11.914667|Android Studio|foregroundwindowinfo – wi.dart [foregroundwindowinfo]
+2022-07-28 17:01:57.570690|notepad++|다시 읽기
+2022-07-28 17:02:07.953311|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-28 17:02:29.956906|MouseWithoutBordersHelper.exe|
+2022-07-28 17:02:30.955555|Android Studio|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-28 17:02:48.956651|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\error_log.txt - Notepad++
+2022-07-28 17:02:52.459910|Android Studio|foregroundwindowinfo – root_page.dart [foregroundwindowinfo]
+2022-07-28 17:03:15.951047|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\error_log.txt - Notepad++
+2022-07-28 17:03:18.456275|Android Studio|foregroundwindowinfo – fwi_logger.dart [foregroundwindowinfo]
+2022-07-28 17:03:45.456780|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\error_log.txt - Notepad++
+2022-07-28 17:03:47.457845|Android Studio|foregroundwindowinfo – foreground_window_tracer.dart [foregroundwindowinfo]
+2022-07-28 17:03:49.956312|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\error_log.txt - Notepad++
+2022-07-28 17:03:51.963970|Android Studio|foregroundwindowinfo – main.dart [foregroundwindowinfo]
+2022-07-28 17:04:33.383251|notepad++|C:\Hanbin\Project\foregroundwindowinfo\foregroundwindowinfo\error_log.txt - Notepad++
+2022-07-29 15:23:04.363719|Android Studio|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-29 15:23:08.854614|steam.exe|Steam
+2022-07-29 15:23:30.466724|Android Studio|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-29 15:23:33.470966|steam.exe|Steam
+2022-07-29 15:23:55.958027|Android Studio|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-29 15:25:19.972672|steam.exe|Steam
+2022-07-29 15:25:21.461026|Android Studio|foregroundwindowinfo – alias_dictionary.dart [foregroundwindowinfo]
+2022-07-29 15:25:58.959417|steam.exe|Steam
+2022-07-29 15:26:00.468682|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-29 15:26:06.959719|steam.exe|Steam
+2022-07-29 15:26:08.468150|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-29 15:31:03.526462|steam.exe|Steam
+2022-07-29 15:31:07.026280|Android Studio|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-29 15:31:21.518112|steam.exe|Steam
+2022-07-29 15:31:23.533818|Android Studio|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-29 15:31:30.025258|steam.exe|Steam
+2022-07-29 15:31:32.027659|Android Studio|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-29 15:32:31.365249|steam.exe|Steam
+2022-07-29 15:32:32.867892|Android Studio|foregroundwindowinfo – run_page.dart [foregroundwindowinfo]
+2022-07-29 15:33:07.726306|steam.exe|Steam
+2022-07-29 15:35:39.566|steam.exe|Steam
+2022-07-29 15:35:41.063092|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
+2022-07-29 15:35:42.555019|steam.exe|Steam
+2022-07-29 15:35:46.068057|Android Studio|foregroundwindowinfo – fwi.dart [foregroundwindowinfo]
